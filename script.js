@@ -57,7 +57,7 @@ function tarkista()
 
 
 
-      var pyly = document.getElementsByName('Teksti').value;
+      var pyly = document.getElementsByName('Teksti');
 
         if(pyly.length<10)
         {
