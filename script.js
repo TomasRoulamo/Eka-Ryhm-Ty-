@@ -32,9 +32,10 @@ function nimi(){
     { //Checkbox
         var kuutiot = document.getElementsByName('mielipiteet').value;
         if(kuutiot = '')
-      }
+      {
         alert("Et ole valinnut kohtaa 'Mitä mieltä olet sivustani tähän asti?'");
-
+}
+}
         var Teksti = form.Teksti.value;
 
         if(Teksti.length<10)
@@ -51,4 +52,3 @@ function nimi(){
         return false;
         }
 }
-    
