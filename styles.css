@@ -1,6 +1,8 @@
 .blue-text {
-color : blue
+color : blue;
 }
+
+@import url(https://fonts.google.com/specimen/Architects+Daughter)
 
 h1 {
     font-size: 30px;
