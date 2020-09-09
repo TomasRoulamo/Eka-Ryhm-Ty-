@@ -1,4 +1,4 @@
-function nimi()
+function nimi(){
     { // Etunimen tarkastus
       var eNimi = form.eNimi.value;
 
@@ -29,7 +29,7 @@ function nimi()
       }
     }
 
-     { //Checkbox
+    { //Checkbox
         var kuutiot = document.getElementsByName('mielipiteet').value;
         if(kuutiot = '')
       }
@@ -50,4 +50,5 @@ function nimi()
         form.Teksti.focus();
         return false;
         }
+}
     
