@@ -3,7 +3,7 @@ function eka() { // Etunimen tarkastus
 
 if(eNimi.length<2)
 {
-alert("Et antanut etunimeäsi!");
+alert("Et antanut etunimeäsi!\nEtunimen pitää olla enemmän kuin kaksi kirjainta pitkä");
 form.eNimi.focus();
 return false;
 }
@@ -14,26 +14,37 @@ function toka() { // Salasanan tarkastus
 
   if(Passu.length<3)
   {
-  alert("Et antanut salasanaa tai se on liian lyhyt!");
+  alert("Et antanut salasanaa tai se on liian lyhyt!\nSalasanan pitää olla enemmän kuin kolme kirjainta pitkä");
   form.Passu.focus();
   return false;
   }
 }
 
-function pelaaja() { //Radion pelaaja tarkastus
-  var rVastaus=-1;
-for (var i=0; i < form.rVastaus.length;i++) {
-if (form.rVastaus[i].checked==true) {
-rVastaus=i;
-if(rVastaus==-1){
-alert("Et valinnut vastataanko palautteeseesi!");
-return false;
-}
+{ //Radion valitseminen
+  var pallukat = document.getElementsByName('vastaukset').value;
+  if(pallukat = '')
+  {
+    alert("Et ole valinnut kohtaa 'Millainen koneen käyttäjä olet'");
+  }
 
-function koulu() { //Radion koulu tarkistus
+ { //Checkbox
+    var kuutiot = document.getElementsByName('mielipiteet').value;
+    if(kuutiot = '')
+  }
+    alert("Et ole valinnut kohtaa 'Mitä mieltä olet sivustani tähän asti?'");
 
-}
+    var Teksti = form.Teksti.value;
 
-function boomer() { //Radion boomer tarkistus
+    if(Teksti.length<10)
+    {
+    alert("Et kirjoittanut palautteeseesi mitään tekstiä! (min. 10 merkkiä)");
+    form.Teksti.focus();
+    return false;
+    }
 
-}
+    if(Teksti.length>1000)
+    {
+    alert("Palaute-tekstin pituus on rajattu 1000 merkkiin!");
+    form.Teksti.focus();
+    return false;
+    }
