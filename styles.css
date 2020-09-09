@@ -2,11 +2,14 @@
 color : purple;
 }
 
-h1 {
-    font-size: 30px;
-    font-family: monospace;
-}
+@import url(https://fonts.google.com/specimen/Source+Code+Pro);
 
 body {
     background-color: lightgreen
+}
+
+h1 {
+    font-family: 'Source', sans-serif;
+    font-size: 30px;
+    
 }
