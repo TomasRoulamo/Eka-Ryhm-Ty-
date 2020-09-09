@@ -58,9 +58,8 @@ function tarkista()
 
 
       var pyly = document.getElementsByName('Teksti').value;
-      alert(pyly);
 
-      /*  if(pyly.length<10)
+        if(pyly.length<10)
         {
         alert("Et kirjoittanut palautteeseesi mitään tekstiä! (min. 10 merkkiä)");
 
@@ -73,5 +72,4 @@ function tarkista()
 
         return false;
         }
-      }*/
-}
+      }
