@@ -1,15 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
 .blue-text {
 color : purple;
 }
 
-@import url(https://fonts.google.com/specimen/Source+Code+Pro);
+h1 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+}
 
 body {
     background-color: lightgreen
 }
 
-h1 {
-    font-family: 'Source', sans-serif;
-    font-size: 30px;
-    
-}
