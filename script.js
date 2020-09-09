@@ -1,22 +1,23 @@
-function tarkista(form){
+function tarkista(){
     { // Etunimen tarkastus
-      var eNimi = form.eNimi.value;
+      var eNimi = document.getElementById('eka').value;
 
     if(eNimi.length<2)
     {
     alert("Et antanut etunimeäsi!\nEtunimen pitää olla enemmän kuin kaksi kirjainta pitkä");
-    form.eNimi.focus();
+
+
     return false;
     }
     }
 
     { // Salasanan tarkastus
-      var Passu = form.Passu.value;
+      var Passu = document.getElementById('toka').value;
 
       if(Passu.length<3)
       {
       alert("Et antanut salasanaa tai se on liian lyhyt!\nSalasanan pitää olla enemmän kuin kolme kirjainta pitkä");
-      form.Passu.focus();
+
       return false;
       }
     }
@@ -36,19 +37,19 @@ function tarkista(form){
         alert("Et ole valinnut kohtaa 'Mitä mieltä olet sivustani tähän asti?'");
 }
 }
-      {  var Teksti = form.Teksti.value;
+      {  var Teksti = document.getElementById('vika').value;
 
         if(Teksti.length<10)
         {
         alert("Et kirjoittanut palautteeseesi mitään tekstiä! (min. 10 merkkiä)");
-        form.Teksti.focus();
+
         return false;
         }
 
         if(Teksti.length>1000)
         {
         alert("Palaute-tekstin pituus on rajattu 1000 merkkiin!");
-        form.Teksti.focus();
+
         return false;
         }
       }
