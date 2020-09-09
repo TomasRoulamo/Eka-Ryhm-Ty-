@@ -20,7 +20,7 @@ function toka() { // Salasanan tarkastus
   }
 }
 
-function() { //Radion valitseminen
+{ //Radion valitseminen
   var pallukat = document.getElementsByName('vastaukset').value;
   if(pallukat = '')
   {
@@ -33,4 +33,18 @@ function() { //Radion valitseminen
   }
     alert("Et ole valinnut kohtaa 'Mitä mieltä olet sivustani tähän asti?'");
 
-    
+    var Teksti = form.Teksti.value;
+
+    if(Teksti.length<10)
+    {
+    alert("Et kirjoittanut palautteeseesi mitään tekstiä! (min. 10 merkkiä)");
+    form.Teksti.focus();
+    return false;
+    }
+
+    if(Teksti.length>1000)
+    {
+    alert("Palaute-tekstin pituus on rajattu 1000 merkkiin!");
+    form.Teksti.focus();
+    return false;
+    }
