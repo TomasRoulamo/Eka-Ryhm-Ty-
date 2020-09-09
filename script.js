@@ -37,7 +37,7 @@ function tarkista(){
         alert("Et ole valinnut kohtaa 'Mitä mieltä olet sivustani tähän asti?'");
 }
 }
-      {  var Teksti = document.getElementByName('Teksti').value;
+      {  var Teksti = document.getElementsByName('Teksti').value;
 
         if(Teksti.length<10)
         {
