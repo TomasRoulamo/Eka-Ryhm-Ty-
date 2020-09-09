@@ -2,16 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <script src = "script.js"></script>
-    
     <link href= "styles.css" rel="stylesheet">
     <meta charset="utf-8">
     <title></title>
-    
   </head>
   <body>
     <h1 class = "blue-text">Kirjautumislomake</h1>
-    <h2>Moifdsafdsafedsfdsfds</h2>
     <form>
+
         <p>Nimi:
             <br>
             <input type= "text" id="eka" value="">
@@ -22,19 +20,19 @@
         </p>
         <p>Millainen koneen käyttäjä olet?
           <br>
-          <input type="radio" name="vastaukset" value="vastaus1">Tykkään pelata
+          <input type="radio" name="vastaukset" value="vastaus1" id= "pelaaja">Tykkään pelata
           <br>
-          <input type="radio" name="vastaukset" value="vastaus2">Käytän vain koulua varten
+          <input type="radio" name="vastaukset" value="vastaus2" id= "koulu">Käytän vain koulua varten
           <br>
-          <input type="radio" name="vastaukset" value="vastaus3">En käytä konetta, olen boomer
+          <input type="radio" name="vastaukset" value="vastaus3" id = "boomer">En käytä konetta
         </p>
         <p>Mitä mieltä olet sivustani tähän asti?
           <br>
-          <input type="checkbox" name="mielipiteet" value="mp1">Todella hieno
+          <input type="checkbox" name="mielipiteet" value="mp1" id= "hieno">Todella hieno
           <br>
-          <input type="checkbox" name="mielipiteet" value="mp2">Ihan okei
+          <input type="checkbox" name="mielipiteet" value="mp2" id= "ok">Ihan okei
           <br>
-          <input type="checkbox" name="mielipiteet" value="mp3">Kaipaa parannusta
+          <input type="checkbox" name="mielipiteet" value="mp3" id= "paranna">Kaipaa parannusta
         </p>
         <p>Mikä on lempiaineesi Keudassa?
             <br>
@@ -47,12 +45,11 @@
         </p>
         <p>Kerro, miten kehittäisit sivuani
             <br>
-            <textarea name="teksti" cols="50" rows="5"></textarea>
+            <input type= "text" id="vika" value="">
             <br>
             <br>
-          <button type= "button" onclick= "tarkista()">Lähetä</button>
+          <button type= "button" onclick= "nimi()">Lähetä</button>
       </p>
     </form>
   </body>
 </html>
-    
