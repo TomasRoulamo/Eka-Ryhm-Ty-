@@ -1,4 +1,4 @@
-function tarkista(){
+function tarkista(form){
     { // Etunimen tarkastus
       var eNimi = form.eNimi.value;
 
@@ -36,7 +36,7 @@ function tarkista(){
         alert("Et ole valinnut kohtaa 'Mitä mieltä olet sivustani tähän asti?'");
 }
 }
-        var Teksti = form.Teksti.value;
+      {  var Teksti = form.Teksti.value;
 
         if(Teksti.length<10)
         {
@@ -51,4 +51,5 @@ function tarkista(){
         form.Teksti.focus();
         return false;
         }
+      }
 }
