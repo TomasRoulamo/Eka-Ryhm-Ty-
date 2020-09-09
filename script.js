@@ -1,4 +1,4 @@
-function nimi(){
+function tarkista(){
     { // Etunimen tarkastus
       var eNimi = form.eNimi.value;
 
