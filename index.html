@@ -15,16 +15,33 @@
         </p>
         <p>Salasana:
             <br>
-            <input type= "text" id="toka" value="">
+            <input type= "password" id="toka" value="">
         </p>
-        <p>Millainen koneen käyttäjä olet?</p>
-
-        <p>Mitä mieltä olet sivustani tähän asti?</p>
-
-        <p>Mikä on lempiaineesi Keudassa</p>
-          <select id= "aineet">
+        <p>Millainen koneen käyttäjä olet?
+          <br>
+          <input type="radio" name="vastaukset" value="vastaus1">Tykkään pelata
+          <br>
+          <input type="radio" name="vastaukset" value="vastaus2">Käytän vain koulua varten
+          <br>
+          <input type="radio" name="vastaukset" value="vastaus3">En käytä konetta
+        </p>
+        <p>Mitä mieltä olet sivustani tähän asti?
+          <br>
+          <input type="checkbox" name="mielipiteet" value="mp1">Todella hieno
+          <br>
+          <input type="checkbox" name="mielipiteet" value="mp2">Ihan okei
+          <br>
+          <input type="checkbox" name="mielipiteet" value="mp3">Kaipaa parannusta
+        </p>
+        <p>Mikä on lempiaineesi Keudassa?
+            <br>
+            <select id= "aineet">
             <option>Ammattiaineet</option>
-          </select>
+            <option>Kirjallisetaineet</option>
+            <option>Valinnaiset aineet</option>
+            <option>Muu</option>
+            </select>
+        </p>
         <p>Kerro, miten kehittäisit sivustani</p>
             <input type= "text" id="vika" value="">
         <button type= "button" onclick= "">Lähetä</button>
