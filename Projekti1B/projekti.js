@@ -1,4 +1,4 @@
-function tarkasta(lomake){ //Lähetä nappulan funktio
+function laheta(lomake){ //Lähetä nappulan funktio
     
     //Etunimen tarkastus
     var eNimi = lomake.eka.value 
