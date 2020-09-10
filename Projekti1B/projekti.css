@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
 
 .blue-text {
-color : Yellow;
+color : Darkblue;
 }
 
 h1 {
@@ -11,9 +11,13 @@ h1 {
 
 body {
     background-image: url("https://stillmed.olympic.org/media/Images/OlympicOrg/News/2019/12/11/2019-12-11-mountain-day-featured-01.jpg");
-    background-color: #cccccc;
 }
+
 div {
+  border-width: 1px;
+  border-style: solid;
+ border-color: blue;
+  margin: auto;
   height: 730px;
   width: 20%;
   background-color: powderblue;
