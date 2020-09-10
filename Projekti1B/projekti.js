@@ -26,10 +26,11 @@ function tarkasta(lomake){ //Lähetä nappulan funktio
     }
 
     //Pallukoitten tarkastus
-    var intVastaus=-1;
-        for (var i=0; i < form.Vastaus.length;i++) {
-        if (form.Vastaus[i].checked==true) {
-        intVastaus=i;
+    var pallukka = lomake.Vastaus.length;
+    var vastaus = false;
+        for (var i=0; i < pallukka.length;i++) {
+        if (pallukka[i].checked==true) {
+           vastaus = true;
     }
     if(intVastaus==-1){
         alert("Et valinnut pallukkaa!");
