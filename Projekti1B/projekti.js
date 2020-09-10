@@ -67,8 +67,8 @@ function laheta(lomake){ //Lähetä nappulan funktio
 
 function reset(uusi){//Tällä tyhjennetään kaikki lomakkeessa oleva tieto.
 
-    var tyhjenna=uusi.value;
-    if (!confirm("Haluatko varmasti tyhjentää kaikki kentät?")) {
+    var tyhj=uusi.value;
+    if (!confirm("Haluatko varmasti tyhjentää kaikki kentät?")) {//Tässä varmennetaan haluaako täyttäjä tyhjentää lomakkeen.
     return false;
     }
 }
