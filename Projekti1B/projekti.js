@@ -1,6 +1,7 @@
-function laheta(lomake){
-
-    var eNimi = lomake.eka.value //Etunimen tarkastus
+function laheta(lomake){ //Lähetä nappulan funktio
+    
+    //Etunimen tarkastus
+    var eNimi = lomake.eka.value 
     if(eNimi.length < 3){
         alert("Et antanut etunimeäsi!");
         lomake.eka.focus();
@@ -14,9 +15,10 @@ function laheta(lomake){
         alert("Et antanut sähköpostiosoitettasi tai se on virheellinen!");
         form.toka.focus();
         return false;
-        }
-
-    var ika = lomake.toka.value //Iän tarkastus
+    }
+    
+    //Iän tarkastus
+    var ika = lomake.toka.value 
     if(ika.length < 2){
         alert('Et laittanut ikääsi, tai olet liian nuori.')
         lomake.toka.focus();
@@ -25,18 +27,18 @@ function laheta(lomake){
 
     //Pallukoitten tarkastus
     var intVastaus=-1;
-
-        for (var i=0; i < form.vastaukset.length;i++) {
-        if (form.vastaukset[i].checked==true) {
+        for (var i=0; i < form.Vastaus.length;i++) {
+        if (form.Vastaus[i].checked==true) {
         intVastaus=i;
     }
     if(intVastaus==-1){
         alert("Et valinnut pallukkaa!");
         return false;
     }
-}
+    }
 
-    var boxit = lomake.mielipiteet.value //Checkboxien tarkastus
+    //Checkboxien tarkastus
+    var boxit = lomake.mielipiteet.value 
     var vastaus2 = 0;
      for(var k = 0; k < boxit.length; k++){
        if(boxit[k].checked == 1){
@@ -47,8 +49,9 @@ function laheta(lomake){
        alert("Et ole valinnut mitään kohdasta: 'Parasta Keudassa on'");
        return false;
     }
-
-    var teksti = lomake.Teksti.value //Tekstiboxin tarkastus
+    
+    //Tekstiboxin tarkastus
+    var teksti = lomake.Teksti.value 
     if(teksti.length < 10){
         alert('Palautteesi täytyy olla vähintään 10 kirjainta pitkä.');
        return false;
@@ -59,6 +62,7 @@ function laheta(lomake){
     }
 
     else {
+        alert('Kiitos lomakkeen täyttämisestä!')
         return;
     }
 }
