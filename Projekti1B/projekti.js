@@ -7,7 +7,13 @@ function tarkasta(lomake){
         return false;
     }
 
-    // var sPosti = lomake.toka.value //Sähköpostin tarkastus
+    //Sähköpostin tarkastus
+    if(form.toka.value.indexOf('@',0) == -1)
+        {
+        alert("Et antanut sähköpostiosoitettasi tai se on virheellinen!");
+        form.toka.focus();
+        return false;
+        }
 
     var ika = lomake.toka.value //Iän tarkastus
     if(ika.length < 2){
