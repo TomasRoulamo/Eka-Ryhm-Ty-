@@ -8,8 +8,7 @@
   </head>
   <body>
     <h1 class = "blue-text">Kyselylomake</h1>
-    <form class>
-
+<form class="" action="projekti.html" method="post" onsubmit="" onreset="">
         <p>Nimi:
             <br>
             <input type= "text" id="eka" value="">
@@ -23,7 +22,7 @@
             <input type= "text" id="kolmas" value="">
             <p>Mihin ryhmään kuulut?
               <br>
-              <select id= "ryhmä">
+              <select id= "ryhmä" multiple>
               <option>Opiskelija</option>
               <option>Työssä</option>
               <option>Työtön</option>
@@ -60,7 +59,9 @@
             <textarea name="Teksti" cols="50" rows="5"></textarea>
             <br>
             <br>
-          <button type= "button" onclick= "tarkista()">Lähetä</button>
+          <!--<button type= "button" onclick= "tarkista()">Lähetä</button>-->
+          <input type="submit" name="Tarkasta" value="Lähetä lomake">
+          <input type="reset" name="Tyhjenna" value="Tyhjennä lomake">
       </p>
     </form>
   </body>
