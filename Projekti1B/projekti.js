@@ -6,6 +6,7 @@ function laheta(lomake){
         lomake.eka.focus();
         return false;
     }
+    
 
     //Sähköpostin tarkastus
     if(form.toka.value.indexOf('@',0) == -1)
@@ -44,15 +45,20 @@ function laheta(lomake){
      }
      if(vastaus2 == 0){
        alert("Et ole valinnut mitään kohdasta: 'Parasta Keudassa on'");
+       return false;
     }
 
     var teksti = lomake.Teksti.value //Tekstiboxin tarkastus
     if(teksti.length < 10){
         alert('Palautteesi täytyy olla vähintään 10 kirjainta pitkä.');
-       
+       return false;
     }
     if(teksti.length < 1000){
         alert('Palautteesi oli liian pitkä, se saa olla max 1000 merkkiä pitkä.')
-        
+        return false;
+    }
+
+    else {
+        return;
     }
 }
