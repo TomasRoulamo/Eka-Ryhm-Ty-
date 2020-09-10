@@ -9,16 +9,18 @@ function tarkasta(lomake){ //Lähetä nappulan funktio
     }
     
     //Sähköpostin tarkastus
-    if(form.toka.value.indexOf('@',0) == -1){
-        alert("Et antanut sähköpostiosoitettasi tai se on virheellinen!");
-        form.toka.focus();
+    var sPosti = lomake.toka.value;
+    var ehdot = /\S+@\S+/;
+        if(!ehdot.test(sPosti)){   
+        alert("Anna kunnon sähköposti");
+        lomake.toka.focus();
         return false;
     }
     
-    //Iän tarkastus
+    //Iän tarkastus (kesken)
     var ika = lomake.kolmas.value 
     if(ika.length < 2){
-        alert('Et laittanut ikääsi, tai olet liian nuori.')
+        alert('Et laittanut ikääsi, tai olet liian nuori.');
         lomake.kolmas.focus();
         return false;
     }
