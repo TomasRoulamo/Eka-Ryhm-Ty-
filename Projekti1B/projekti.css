@@ -16,9 +16,16 @@ body {
 div {
   border-width: 1px;
   border-style: solid;
- border-color: blue;
+  border-color: blue;
   margin: auto;
   height: 730px;
   width: 20%;
   background-color: powderblue;
+}
+div.b {
+  position: absolute;
+  left: 150px;
+  width: 200px;
+  height: 120px;
+  border: 3px solid green;
 }
