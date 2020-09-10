@@ -1,11 +1,11 @@
-function Tarkasta(lomake){
+function tarkasta(lomake){
 
     var eNimi = lomake.eka.value //Etunimen tarkastus
     if(eNimi.length < 3){
         alert('Et laittanut etunimeäsi, etunimen täytyy olla vähintään 3 kirjainta pitkä.')
     }
 
-    var sPosti = lomake.toka.value //Sähköpostin tarkastus
+    // var sPosti = lomake.toka.value //Sähköpostin tarkastus
 
     var ika = lomake.toka.value //Iän tarkastus
     if(ika.length < 2){
@@ -15,35 +15,32 @@ function Tarkasta(lomake){
     var pallukat = lomake.vastaukset.value //Pallukoitten tarkastus
     var vastaus = 0;
       for(var i = 0; i < pallukat.length; i++){
-        if(pallukat[i].checked == 1)
-        {
+        if(pallukat[i].checked == 1){
           vastaus = 1;
         }
       }
-      if(vastaus == 0)
-      {
-        alert("Et ole valinnut kohtaa 'Suositteletko Keudaa ystävällesi?'");
+      if(vastaus == 0){
+        alert("Et ole valinnut mitään kohdasta 'Suosittelisitko Keudaa ystävällesi?'");
     }
 
-    var boxit = lomake.vastaukset.value //Checkboxien tarkastus
-    var vastaus = 0;
-     for(var i = 0; i < boxit.length; i++){
-       if(boxit[i].checked == 1)
-       {
-         vastaus = 1;
+    var boxit = lomake.mielipiteet.value //Checkboxien tarkastus
+    var vastaus2 = 0;
+     for(var k = 0; k < boxit.length; k++){
+       if(boxit[k].checked == 1){
+         vastaus2 = 1;
        }
      }
-     if(vastaus == 0)
-     {
-       alert("Et ole valinnut kohtaa 'Parasta Keudassa on'");
+     if(vastaus2 == 0){
+       alert("Et ole valinnut mitään kohdasta: 'Parasta Keudassa on'");
     }
 
     var teksti = lomake.Teksti.value //Tekstiboxin tarkastus
     if(teksti.length < 10){
         alert('Palautteesi täytyy olla vähintään 10 kirjainta pitkä.');
-        return;
+       
     }
     if(teksti.length < 1000){
         alert('Palautteesi oli liian pitkä, se saa olla max 1000 merkkiä pitkä.')
+        
     }
 }
