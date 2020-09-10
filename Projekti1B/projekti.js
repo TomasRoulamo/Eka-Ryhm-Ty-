@@ -59,9 +59,16 @@ function laheta(lomake){ //Lähetä nappulan funktio
         return false;
     }
     
-    else{
-    alert('Kiitos kun täytit lomakkeen! :)');
-
+    else{ //Jos kaikkiin kohtiin on vastattu, niin saa täyttäjä kiitoksen.
+    alert('Kiitos kun täytit lomakkeen! :) "Lomake tyhjenee nyt automaattisesti"');
     }
 
+}
+
+function reset(uusi){//Tällä tyhjennetään kaikki lomakkeessa oleva tieto.
+
+    var tyhjenna=uusi.value;
+    if (!confirm("Haluatko varmasti tyhjentää kaikki kentät?")) {
+    return false;
+    }
 }

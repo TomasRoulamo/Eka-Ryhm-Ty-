@@ -9,7 +9,7 @@
   <body>
     <div class="boxed">
     <h1 class = "blue-text">Kyselylomake</h1>
-<form class="" action="projekti.html" method="post" onsubmit="laheta(this)" onreset="">
+<form class="" action="projekti.html" method="post" onsubmit="laheta(this)" onreset="reset(this)">
         <p>&nbspNimi:
             <br>
             &nbsp;<input type= "text" name="eka" placeholder="Kirjoita oma nimesi tähän">
@@ -23,7 +23,7 @@
             &nbsp;<input type= "text" name="kolmas" placeholder="Kirjoita oma ikäsi">
             <p>&nbsp;Mihin ryhmään kuulut?
               <br>
-              &nbsp;<select id= "ryhmä" multiple>
+              &nbsp;<select name= "joku" multiple>
               <option>Opiskelija</option>
               <option>Työssä</option>
               <option>Työtön</option>
