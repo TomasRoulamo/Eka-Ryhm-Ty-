@@ -1,4 +1,4 @@
-function laheta(lomake){ //Lähetä nappulan funktio
+function tarkasta(lomake){ //Lähetä nappulan funktio
     
     //Etunimen tarkastus
     var eNimi = lomake.eka.value 
@@ -8,7 +8,6 @@ function laheta(lomake){ //Lähetä nappulan funktio
         return false;
     }
     
-
     //Sähköpostin tarkastus
     if(form.toka.value.indexOf('@',0) == -1){
         alert("Et antanut sähköpostiosoitettasi tai se on virheellinen!");
