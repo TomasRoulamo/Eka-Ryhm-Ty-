@@ -2,7 +2,9 @@ function tarkasta(lomake){
 
     var eNimi = lomake.eka.value //Etunimen tarkastus
     if(eNimi.length < 3){
-        alert('Et laittanut etunimeäsi, etunimen täytyy olla vähintään 3 kirjainta pitkä.')
+        alert("Et antanut etunimeäsi!");
+        lomake.eka.focus();
+        return false;
     }
 
     // var sPosti = lomake.toka.value //Sähköpostin tarkastus
@@ -10,18 +12,22 @@ function tarkasta(lomake){
     var ika = lomake.toka.value //Iän tarkastus
     if(ika.length < 2){
         alert('Et laittanut ikääsi, tai olet liian nuori.')
+        lomake.toka.focus();
+        return false;
     }
 
-    var pallukat = lomake.vastaukset.value //Pallukoitten tarkastus
-    var vastaus = 0;
-      for(var i = 0; i < pallukat.length; i++){
-        if(pallukat[i].checked == 1){
-          vastaus = 1;
-        }
-      }
-      if(vastaus == 0){
-        alert("Et ole valinnut mitään kohdasta 'Suosittelisitko Keudaa ystävällesi?'");
+    //Pallukoitten tarkastus
+    var intVastaus=-1;
+
+        for (var i=0; i < form.vastaukset.length;i++) {
+        if (form.vastaukset[i].checked==true) {
+        intVastaus=i;
     }
+    if(intVastaus==-1){
+        alert("Et valinnut pallukkaa!");
+        return false;
+    }
+}
 
     var boxit = lomake.mielipiteet.value //Checkboxien tarkastus
     var vastaus2 = 0;
