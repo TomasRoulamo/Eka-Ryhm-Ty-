@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script src = "projekti.js"></script>
+    <link href= "styles.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1 class = "blue-text">Kyselylomake</h1>
+    <form>
+
+        <p>Nimi:
+            <br>
+            <input type= "text" id="eka" value="">
+        </p>
+        <p>Sähköposti:
+            <br>
+            <input type= "text" id="toka" value="">
+        </p>
+        <p>Ikä:
+            <br>
+            <input type= "text" id="kolmas" value="">
+        </p>
+        <p>Suositteletko Keudaa ystävillesi?
+          <br>
+          <input type="radio" name="vastaukset" value="vastaus1">Kykkä
+          <input type="radio" name="vastaukset" value="vastaus2">En
+          <br>
+          <input type="radio" name="vastaukset" value="vastaus3">En osaa sanoa
+        </p>
+        <p>Parasta Keudassa on:
+          <br>
+          <input type="checkbox" name="mielipiteet" value="mp1">Todella hieno
+          <br>
+          <input type="checkbox" name="mielipiteet" value="mp2">Ihan okei
+          <br>
+          <input type="checkbox" name="mielipiteet" value="mp3">Kaipaa parannusta
+        </p>
+        <p>Mikä on lempiaineesi Keudassa?
+            <br>
+            <select id= "aineet">
+            <option>Ammattiaineet</option>
+            <option>Kirjallisetaineet</option>
+            <option>Valinnaiset aineet</option>
+            <option>Muu</option>
+            </select>
+        </p>
+        <p>Kerro, miten kehittäisit sivuani
+            <br>
+            <textarea name="Teksti" cols="50" rows="5"></textarea>
+            <br>
+            <br>
+          <button type= "button" onclick= "tarkista()">Lähetä</button>
+      </p>
+    </form>
+  </body>
+</html>
