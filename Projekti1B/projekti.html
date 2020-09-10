@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1 class = "blue-text">Kyselylomake</h1>
-    <form>
+    <form class>
 
         <p>Nimi:
             <br>
@@ -21,10 +21,19 @@
         <p>Ikä:
             <br>
             <input type= "text" id="kolmas" value="">
+            <p>Mihin ryhmään kuulut?
+              <br>
+              <select id= "ryhmä">
+              <option>Opiskelija</option>
+              <option>Työssä</option>
+              <option>Työtön</option>
+              <option>Eläkeläinen</option>
+              </select>
         </p>
         <p>Suositteletko Keudaa ystävillesi?
           <br>
-          <input type="radio" name="vastaukset" value="vastaus1">Kykkä
+          <input type="radio" name="vastaukset" value="vastaus1">Kyllä
+          <br>
           <input type="radio" name="vastaukset" value="vastaus2">En
           <br>
           <input type="radio" name="vastaukset" value="vastaus3">En osaa sanoa
