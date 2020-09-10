@@ -1,4 +1,4 @@
-function Tarkasta(lomake){
+function tarkasta(lomake){
 
     var eNimi = lomake.eka.value //Etunimen tarkastus
     if(eNimi.length < 3){
