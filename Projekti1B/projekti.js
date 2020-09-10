@@ -58,11 +58,10 @@ function laheta(lomake){ //Lähetä nappulan funktio
         lomake.Teksti.focus();
         return false;
     }
-    if(teksti.length < 1000){
-        alert('Palautteesi oli liian pitkä, se saa olla max 1000 merkkiä pitkä.');
-        lomake.Teksti.focus();
-        return false;
-    }
+    
+    else{
+    alert('Kiitos kun täytit lomakkeen! :)');
 
+    }
 
 }
