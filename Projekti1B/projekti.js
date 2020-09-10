@@ -26,38 +26,30 @@ function laheta(lomake){ //Lähetä nappulan funktio
     }
 
     //Pallukoitten tarkastus
-    var pallukka = lomake.Vastaus.value;
-    var vastaus = false;
-        for (var i=0; i < pallukka.length;i++) {
+    var pallukka = lomake.suositus;
+    var painettu = false;
+        for (var i = 0; i < pallukka.length; i++) {
         if (pallukka[i].checked==true) {
-           vastaus = true;
+           painettu = true;
         }
-        if(pallukka[i].checked == true){
-         vastaus = true;
-        }
-        }
-        if(vastaus == false){
-            alert('Et ole valinnut pallukkaa.');
-            return false;
-        }
-
-    //Checkboxien tarkastus
-    var boxit = lomake.mielipiteet.value 
-    var vastaus = false;
-        for (var i=0; i < boxit.length;i++) {
-        if (boxit[i].checked==true) {
-           vastaus = true;
     }
-            if(boxit[i].checked == true)
-        {
-         vastaus = true;
-            }
-        }
-        if(vastaus == false)
-        {
+        if(painettu == false) {
             alert('Et ole valinnut pallukkaa.');
             return false;
-            }
+    }
+    
+    //Checkboxien tarkastus
+    var boxit = lomake.mielipiteet; 
+    var vastaus = false;
+        for (var k=0; k < boxit.length;k++) {
+        if (boxit[k].checked==true) {
+           vastaus = true;
+        }
+    }
+        if(vastaus == false){
+            alert('Et ole valinnut laatikkoa.');
+            return false;
+        }
     
     //Tekstiboxin tarkastus
     var teksti = lomake.Teksti.value 
@@ -72,8 +64,5 @@ function laheta(lomake){ //Lähetä nappulan funktio
         return false;
     }
 
-    else {
-        alert('Kiitos lomakkeen täyttämisestä!')
-        return;
-    }
+
 }
