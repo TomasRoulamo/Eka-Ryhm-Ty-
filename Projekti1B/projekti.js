@@ -15,27 +15,23 @@ function tarkasta(lomake){
     var pallukat = lomake.vastaukset.value //Pallukoitten tarkastus
     var vastaus = 0;
       for(var i = 0; i < pallukat.length; i++){
-        if(pallukat[i].checked == 1)
-        {
+        if(pallukat[i].checked == 1){
           vastaus = 1;
         }
       }
-      if(vastaus == 0)
-      {
-        alert("Et ole valinnut kohtaa 'Suositteletko Keudaa ystävällesi?'");
+      if(vastaus == 0){
+        alert("Et ole valinnut mitään kohdasta 'Suosittelisitko Keudaa ystävällesi?'");
     }
 
     var boxit = lomake.vastaukset.value //Checkboxien tarkastus
     var vastaus = 0;
-     for(var i = 0; i < boxit.length; i++){
-       if(boxit[i].checked == 1)
-       {
+     for(var k = 0; k < boxit.length; k++){
+       if(boxit[k].checked == 1){
          vastaus = 1;
        }
      }
-     if(vastaus == 0)
-     {
-       alert("Et ole valinnut kohtaa 'Parasta Keudassa on'");
+     if(vastaus == 0){
+       alert("Et ole valinnut mitään kohdasta: 'Parasta Keudassa on'");
     }
 
     var teksti = lomake.Teksti.value //Tekstiboxin tarkastus
@@ -45,5 +41,6 @@ function tarkasta(lomake){
     }
     if(teksti.length < 1000){
         alert('Palautteesi oli liian pitkä, se saa olla max 1000 merkkiä pitkä.')
+        return;
     }
 }
