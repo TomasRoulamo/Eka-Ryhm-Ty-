@@ -10,18 +10,17 @@ function laheta(lomake){ //Lähetä nappulan funktio
     
 
     //Sähköpostin tarkastus
-    if(form.toka.value.indexOf('@',0) == -1)
-        {
+    if(form.toka.value.indexOf('@',0) == -1){
         alert("Et antanut sähköpostiosoitettasi tai se on virheellinen!");
         form.toka.focus();
         return false;
     }
     
     //Iän tarkastus
-    var ika = lomake.toka.value 
+    var ika = lomake.kolmas.value 
     if(ika.length < 2){
         alert('Et laittanut ikääsi, tai olet liian nuori.')
-        lomake.toka.focus();
+        lomake.kolmas.focus();
         return false;
     }
 
@@ -54,10 +53,12 @@ function laheta(lomake){ //Lähetä nappulan funktio
     var teksti = lomake.Teksti.value 
     if(teksti.length < 10){
         alert('Palautteesi täytyy olla vähintään 10 kirjainta pitkä.');
-       return false;
+        lomake.Teksti.focus();
+        return false;
     }
     if(teksti.length < 1000){
-        alert('Palautteesi oli liian pitkä, se saa olla max 1000 merkkiä pitkä.')
+        alert('Palautteesi oli liian pitkä, se saa olla max 1000 merkkiä pitkä.');
+        lomake.Teksti.focus();
         return false;
     }
 
