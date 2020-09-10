@@ -26,30 +26,38 @@ function laheta(lomake){ //Lähetä nappulan funktio
     }
 
     //Pallukoitten tarkastus
-    var pallukka = lomake.Vastaus.length;
+    var pallukka = lomake.Vastaus.value;
     var vastaus = false;
         for (var i=0; i < pallukka.length;i++) {
         if (pallukka[i].checked==true) {
            vastaus = true;
-    }
-    if(intVastaus==-1){
-        alert("Et valinnut pallukkaa!");
-        return false;
-    }
-    }
+        }
+        if(pallukka[i].checked == true){
+         vastaus = true;
+        }
+        }
+        if(vastaus == false){
+            alert('Et ole valinnut pallukkaa.');
+            return false;
+        }
 
     //Checkboxien tarkastus
     var boxit = lomake.mielipiteet.value 
-    var vastaus2 = 0;
-     for(var k = 0; k < boxit.length; k++){
-       if(boxit[k].checked == 1){
-         vastaus2 = 1;
-       }
-     }
-     if(vastaus2 == 0){
-       alert("Et ole valinnut mitään kohdasta: 'Parasta Keudassa on'");
-       return false;
+    var vastaus = false;
+        for (var i=0; i < boxit.length;i++) {
+        if (boxit[i].checked==true) {
+           vastaus = true;
     }
+            if(boxit[i].checked == true)
+        {
+         vastaus = true;
+            }
+        }
+        if(vastaus == false)
+        {
+            alert('Et ole valinnut pallukkaa.');
+            return false;
+            }
     
     //Tekstiboxin tarkastus
     var teksti = lomake.Teksti.value 
