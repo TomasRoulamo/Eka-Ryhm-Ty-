@@ -15,7 +15,6 @@ function Numero(arpa){
         document.getElementById("Rivi").innerHTML = '<p>'+ "Voitit!" +'</p>';
     }
 }
-
-function restart(uus){
-
+function reload(){
+    window.location.reload();
 }
