@@ -11,17 +11,17 @@ var num = Math.floor(Math.random() * 10 + 1)
         //do/while loop, while condition is based on if the user NOT guessing the number (e.g. guessed == false)
         do {
             arvaa = prompt ("Arvaa numero 1 ja 10 välillä.");
-            document.write ("You guessed the number " + arvaa + "<br/>");
+            document.write ("Arvasit " + arvaa + "<br/>");
             if (arvaa > num) {
-                document.write ("You guessed too high, think smaller" + "<br/>");
+                document.write ("Arvasit liian korkean. Se on pienempi." + "<br/>");
                 arvattu = false
                 }
             else if (arvaa < num){
-                document.write ("You guessed too low, think bigger" + "<br/");
+                document.write ("Arvasit liian alhaisen. Se on isompi." + "<br/");
                 arvattu = false
                 }
             else {
-                alert("You guessed the right number!")
+                alert("Arvasit oikein!")
                 arvattu = true}
         }
-        while (arvattu = false) 
+        while (arvattu = false)
