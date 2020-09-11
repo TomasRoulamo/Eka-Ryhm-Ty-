@@ -12,20 +12,20 @@ function Numero(arpa){ //kertoo onko luku jota painoit liian iso, pieni vai voit
     }
     for(var i = 0; i < maxyritys; i++){
     if(maxyritys == 4){
-        document.getElementById("Rivi").innerHTML = '<p>'+ "Käytit kaikki 3 yritystä!" +'</p>';
+        document.getElementById("vastaus").innerHTML = '<p>'+ "Käytit kaikki 3 yritystä!" +'</p>';
     }
     }
 
     if (arvaus > satnum){
-        document.getElementById("Rivi").innerHTML = '<p>'+ "Numero on liian suuri!" +'</p>';
+        document.getElementById("vastaus").innerHTML = '<p>'+ "Numero on liian suuri!" +'</p>';
         return false;
     }
     else if (arvaus < satnum){
-        document.getElementById("Rivi").innerHTML = '<p>'+ "Numero on liian pieni!" +'</p>';
+        document.getElementById("vastaus").innerHTML = '<p>'+ "Numero on liian pieni!" +'</p>';
         return false;
     }
     else {
-        document.getElementById("Rivi").innerHTML = '<p>'+ "Voitit!" +'</p>';
+        document.getElementById("vastaus").innerHTML = '<p>'+ "Voitit!" +'</p>';
     }
 }
 
