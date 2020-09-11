@@ -1,23 +1,33 @@
 
 
-body{ /*Kaksi värinen tausta */
+body{/* Kaksi värinen tausta */
     padding: 0;
     margin: 0;
     background: linear-gradient(to right, #00BFFF, #32CD32);
 }
 
-.button {
+.button { /*Buttonin ulkonäön muutto */
     background-color: #FF4500;
     border: thick;
     color: white;
+    
     padding: 16px 32px;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: auto;
     opacity: 1;
     transition: 0.3s;
 }
 
-.button:hover {
+.button:hover { /*Kun liikutat hiirtä buttonin päälle, sen väri haalentuu */
     opacity: 0.6
 }
+
+.button-grid {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+  }
  
