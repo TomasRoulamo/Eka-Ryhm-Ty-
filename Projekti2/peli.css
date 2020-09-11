@@ -6,20 +6,5 @@ body{ /*Kaksi värinen tausta */
     background: linear-gradient(to right, #32CD32,#00BFFF);
 }
 
-.arvauspeli-grid {
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    min-height: 100vh;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
-}
 
-.arvauspeli-grid > button {
-    cursor: pointer;
-    font-size: 2rem;
-    border: 1px solid white;
-    outline: none;
-    background-color: rgba(255, 225, 225, .75);
-  }
  
