@@ -1,11 +1,6 @@
-function Numero();
-var yksi = document.getElementByName('1');
-var kaksi = document.getElementByName('2');
-var kolme = document.getElementByName('3');
-var neljä = document.getElementByName('4');
-var viisi = document.getElementByName('5');
-var kuusi = document.getElementByName('6');
-var seitsemän = document.getElementByName('7');
-var kahdeksan = document.getElementByName('8');
-var yhdeksän = document.getElementByName('9');
-var kymmenen = document.getElementByName('10');
+function Numero(arpa)
+{
+  var numerot = [1,2,3,4,5,6,7,8,9,10];
+  var arvaus = arpa.value;
+  alert(arvaus);
+}
