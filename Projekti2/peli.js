@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 function Numero();
 var yksi = document.getElementById('1')
 var kaksi = document.getElementById('2')
@@ -41,3 +42,5 @@ var num = Math.floor(Math.random() * 10 + 1)
 
         document.getElementById('pakka').innerHTML = '<p>'+kortit+'</p>';
 >>>>>>> ffbf66dc22cf444694cf8f66d89ce8a47776e104
+=======
+>>>>>>> 03677a96195c479cb975ab6bcc7cb607a87c6c3b
