@@ -1,32 +1,30 @@
 var satnum = Math.floor((Math.random() * 10) + 1);//arpoo random numeron 1-10 välillä
-    
+var ClickCount = 0; 
+
 function Numero(arpa){ //kertoo onko luku jota painoit liian iso, pieni vai voititko pelin
   var arvaus = arpa.value;
-  var maxyritys = 3;
+  var maxyritys = 2;  
   
-  var counter = 0;
+        if(ClickCount>maxyritys) {//katsoo onko nappuloita painettu enemmän kui 3 kertaa
+            document.getElementById("vastaus").innerHTML = '<p>'+ "Käytit kaikki 3 yritystä!" +'</p>';
+            return false;
+    } 
+        else{
+		    ClickCount++;
+    }
   
-  while (counter < 3){
-      counter++
-      console.log(counter);
+        if (arvaus > satnum){//kertoo jos luku on liian pieni
+            document.getElementById("vastaus").innerHTML = '<p>'+ "Numero on liian suuri!" +'</p>';
+            return false;
     }
-    for(var i = 0; i < maxyritys; i++){
-    if(maxyritys == 4){
-        document.getElementById("vastaus").innerHTML = '<p>'+ "Käytit kaikki 3 yritystä!" +'</p>';
+        else if (arvaus < satnum){//kertoo jos luku on liian iso
+            document.getElementById("vastaus").innerHTML = '<p>'+ "Numero on liian pieni!" +'</p>';
+            return false;
     }
+        else {//kertoo jos voitit
+            document.getElementById("vastaus").innerHTML = '<p>'+ "Voitit!" +'</p>';
     }
-
-    if (arvaus > satnum){
-        document.getElementById("vastaus").innerHTML = '<p>'+ "Numero on liian suuri!" +'</p>';
-        return false;
-    }
-    else if (arvaus < satnum){
-        document.getElementById("vastaus").innerHTML = '<p>'+ "Numero on liian pieni!" +'</p>';
-        return false;
-    }
-    else {
-        document.getElementById("vastaus").innerHTML = '<p>'+ "Voitit!" +'</p>';
-    }
+    
 }
 
 function reload(){//Sivun päivittämiseen nappula
