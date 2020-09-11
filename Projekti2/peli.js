@@ -25,3 +25,5 @@ var num = Math.floor(Math.random() * 10 + 1)
                 arvattu = true}
         }
         while (arvattu = false)
+
+        document.getElementById('pakka').innerHTML = '<p>'+kortit+'</p>';
