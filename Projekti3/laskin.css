@@ -13,7 +13,7 @@ h1 { /*Otsikon tyyli ja muu */
 body{/* Kaksi värinen tausta */
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right, #00BFFF, #32CD32);    
+    background: linear-gradient(to right, #FFD700, #FF4500);    
 }
 
 .button { /*Buttonin ulkonäön muutto */
