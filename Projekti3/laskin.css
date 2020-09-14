@@ -21,7 +21,7 @@ body{/* Kaksi värinen tausta */
     border: 1px solid white;
     text-align: center;
     padding: 16px 32px;
-    font-size: 16px;
+    font-size: 20px;
     opacity: 1;
     transition: 0.3s;
 }
@@ -45,7 +45,7 @@ body{/* Kaksi värinen tausta */
     align-content: center;
     min-height: 10vh;
     grid-template-columns: repeat(3, 100px);
-    grid-template-rows: minmax(100px, auto) repeat(5, 80px);
+    grid-template-rows: minmax(100px, auto) repeat(10, 80px);
 }
 
 .tulos{
