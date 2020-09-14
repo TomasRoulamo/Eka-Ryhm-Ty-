@@ -9,9 +9,9 @@ function Numero(arpa){ //kertoo onko luku jota painoit liian iso, pieni vai voit
             document.getElementById("vastaus").innerHTML = '<p>'+ "Käytit kaikki 3 yritystä!" +'</p>';
             return false;
     } 
-        else{
-		    painalluksett++;
-    }
+    else{
+        painallukset++;
+}
   
         if (arvaus > satnum){//kertoo jos luku on liian pieni
             document.getElementById("vastaus").innerHTML = '<p>'+ "Numero on liian suuri!" +'</p>';
