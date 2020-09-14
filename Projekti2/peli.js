@@ -1,16 +1,16 @@
 var satnum = Math.floor((Math.random() * 10) + 1);//arpoo random numeron 1-10 välillä
-var ClickCount = 0; 
+var painallukset = 0; 
 
 function Numero(arpa){ //kertoo onko luku jota painoit liian iso, pieni vai voititko pelin
   var arvaus = arpa.value;
   var maxyritys = 2;  
   
-        if(ClickCount>maxyritys) {//katsoo onko nappuloita painettu enemmän kui 3 kertaa
+        if(painallukset>maxyritys) {//katsoo onko nappuloita painettu enemmän kui 3 kertaa
             document.getElementById("vastaus").innerHTML = '<p>'+ "Käytit kaikki 3 yritystä!" +'</p>';
             return false;
     } 
         else{
-		    ClickCount++;
+		    painalluksett++;
     }
   
         if (arvaus > satnum){//kertoo jos luku on liian pieni
