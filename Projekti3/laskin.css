@@ -16,7 +16,7 @@ body{/* Kaksi värinen tausta */
     background: linear-gradient(to right, #FFD700, #FF4500);    
 }
 
-.button { /*Buttonin ulkonäön muutto */
+button { /*Buttonin ulkonäön muutto */
     background-color: #D3D3D3;
     border: 1px solid white;
     text-align: center;
