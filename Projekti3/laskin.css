@@ -1,0 +1,15 @@
+
+
+body{/* Kaksi värinen tausta */
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #00BFFF, #32CD32);
+}
+
+.laskin-grid{
+
+}
+
+.tulos{
+
+}
