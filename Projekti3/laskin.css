@@ -26,7 +26,7 @@ body{/* Kaksi värinen tausta */
     transition: 0.3s;
 }
 
-.iso-button{
+.iso-button{ /*Isomman buttonin ulkonäkö */
     background-color: #D3D3D3;
     border: 1px solid white;
     text-align: center;
@@ -37,7 +37,14 @@ body{/* Kaksi värinen tausta */
     grid-column: span 2;
 }
 
-.laskin-grid{
+.button:hover { /*Kun liikutat hiirtä buttonin päälle, sen väri haalentuu */
+    opacity: 0.6
+}
+.iso-button:hover { /*Kun liikutat hiirtä buttonin päälle, sen väri haalentuu */
+    opacity: 0.6
+}
+
+.laskin-grid{ /* laskimen "alue" ja sen ulkonäkö */
     box-sizing:border-box;
     text-align: center;
     display: grid;
@@ -48,7 +55,14 @@ body{/* Kaksi värinen tausta */
     grid-template-rows: minmax(100px, auto) repeat(10, 80px);
 }
 
-.tulos{
-
+.tulos{ /*Tulos boxi */
+    display: flex;
+    align-items: flex-end;
+    grid-column: 1/-1;
+    background-color: rgba(88, 85, 85, 0.75);
+    color: #FFFFF0;
+    border: 1px solid white;
+    text-align: center;
+    justify-content: center;
 }
 
