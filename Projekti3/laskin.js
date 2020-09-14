@@ -3,6 +3,7 @@ const laskin = {
   firstOperand: null,
   waitingForSecondOperand: false,
   operator: null,
+};
 
 var numero ='';
 function luku(haettu)
