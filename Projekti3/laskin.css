@@ -1,15 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap'); /*Google fontti*/
 
+.blue-text {  /*Otsikon väri */
+color : blue;
+}
+
+h1 { /*Otsikon tyyli ja muu */
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+    text-align: center;
+}
 
 body{/* Kaksi värinen tausta */
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right, #00BFFF, #32CD32);
+    background: linear-gradient(to right, #FFD700, #FF4500);    
 }
 
-.laskin-grid{
-
+.button { /*Buttonin ulkonäön muutto */
+    background-color: #D3D3D3;
+    border: 1px solid white;
+    text-align: center;
+    padding: 16px 32px;
+    font-size: 20px;
+    opacity: 1;
+    transition: 0.3s;
 }
 
-.tulos{
-
+.iso-button{ /*Isomman buttonin ulkonäkö */
+    background-color: #D3D3D3;
+    border: 1px solid white;
+    text-align: center;
+    padding: 16px 32px;
+    font-size: 16px;
+    opacity: 1;
+    transition: 0.3s;
+    grid-column: span 2;
 }
+
+.button:hover { /*Kun liikutat hiirtä buttonin päälle, sen väri haalentuu */
+    opacity: 0.6
+}
+.iso-button:hover { /*Kun liikutat hiirtä buttonin päälle, sen väri haalentuu */
+    opacity: 0.6
+}
+
+.laskin-grid{ /* laskimen "alue" ja sen ulkonäkö */
+    box-sizing:border-box;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 10vh;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(10, 80px);
+}
+
+.tulos{ /*Tulos boxi */
+    display: flex;
+    align-items: flex-end;
+    grid-column: 1/-1;
+    background-color: rgba(88, 85, 85, 0.75);
+    color: #FFFFF0;
+    border: 1px solid white;
+    text-align: center;
+    justify-content: center;
+}
+
