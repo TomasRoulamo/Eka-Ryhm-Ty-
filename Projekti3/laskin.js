@@ -13,7 +13,6 @@ function luku(haettu)
     if(arvo != '+' || arvo != '-')
     {
         numero += ''+arvo+'';
-        alert(numero);
        return false;
     }
  }
