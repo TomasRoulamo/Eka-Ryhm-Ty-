@@ -1,3 +1,9 @@
+const laskin = {
+  displayValue: '0',
+  firstOperand: null,
+  waitingForSecondOperand: false,
+  operator: null,
+
 var numero ='';
 function luku(haettu)
  {
@@ -11,4 +17,3 @@ function luku(haettu)
     }
  }
  document.getElementById('tulos').innerHTML = numero;
-        
