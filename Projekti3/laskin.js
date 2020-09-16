@@ -5,11 +5,9 @@ const laskin = {
   operator: null,
 };
 
-var numero ='';
-function luku(haettu)
- {
-    arvo = haettu.value;
+function clear(){
 
+<<<<<<< HEAD
     if(arvo != '+' || arvo != '-')
     {
         numero += ''+arvo+'';
@@ -17,3 +15,15 @@ function luku(haettu)
        return;
     }
  }
+=======
+}
+
+
+function laske(){
+   
+}
+
+function taakse(){
+   
+}
+>>>>>>> 13a2a9ae52d2ee1aa3d6cc8e9a4535377e94b34d
