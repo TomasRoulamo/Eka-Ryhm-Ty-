@@ -1,5 +1,5 @@
 function clear(){
-
+   window.location.reload();
 }
 
 function laske(){
