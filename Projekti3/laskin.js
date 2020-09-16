@@ -5,15 +5,15 @@ const laskin = {
   operator: null,
 };
 
-var numero ='';
-function luku(haettu)
- {
-    arvo = haettu.value;
+function clear(){
 
-    if(arvo != '+' || arvo != '-')
-    {
-        numero += ''+arvo+'';
-       return false;
-    }
- }
- document.getElementById('tulos').innerHTML = numero;
+}
+
+
+function laske(){
+   
+}
+
+function taakse(){
+   
+}

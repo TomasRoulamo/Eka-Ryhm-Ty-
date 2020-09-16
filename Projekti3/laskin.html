@@ -12,28 +12,32 @@
     <div class = laskin-grid>
     <div class = "tulos" id = "tulos" value=""></div>
 
-    <button  class = "iso-button" value = "C" onclick= "luku(this)">C</button>
-    <button   value = "+" onclick= "luku()">+</button>
+    <button  class = "iso-button" value = "C" onclick= "clear()">C</button>
+    <button   value = "taakse" onclick= "taakse()">Back</button>
+    <button   value = "-" onclick= "lisaa('-')">-</button>
+    
+    <button   value = "1" onclick= "lisaa('1')">1</button>
+    <button   value = "2" onclick= "lisaa('2')">2</button>
+    <button   value = "3" onclick= "lisaa('3')">3</button>
+    
+    <button   value = "+" onclick= "lisaa('+')">+</button>
+    <button   value = "3" onclick= "lisaa('3')">3</button>
+    <button   value = "4" onclick= "lisaa('4')">4</button>
 
-    <button  class = "operator" value = "-" onclick= "luku(this)">-</button>
-    <button  class = "operator" value = "x" onclick= "luku(this)">x</button>
-    <button   value = "÷" onclick= "luku(this)">÷</button>
+    <button   value = "5" onclick= "lisaa('5')">5</button>
+    <button   value = "x" onclick= "lisaa('*')">*</button>
+    <button   value = "6" onclick= "lisaa('6')">6</button>
 
-    <button   value = "1" onclick= "luku(this)">1</button>
-    <button   value = "2" onclick= "luku(this)">2</button>
-    <button   value = "3" onclick= "luku(this)">3</button>
-
-    <button   value = "4" onclick= "luku(this)">4</button>
-    <button   value = "5" onclick= "luku(this)">5</button>
-    <button   value = "6" onclick= "luku(this)">6</button>
-
-    <button   value = "7" onclick= "luku(this)">7</button>
-    <button   value = "8" onclick= "luku(this)">8</button>
-    <button   value = "9" onclick= "luku(this)">9</button>
-
-    <button  value = "0" onclick= "luku(this)">0</button>
-    <button  class = "operator" value = "," onclick= "luku(this)">,</button>
-    <button  class = "yhteensa operator" value = "=" onclick= "luku(this)">=</button>
+    <button   value = "7" onclick= "lisaa('7')">7</button>
+    <button   value = "8" onclick= "lisaa('8')">8</button>
+    <button   value = "÷" onclick= "lisaa('÷')">÷</button>
+    
+    <button   value = "9" onclick= "lisaa('9')">9</button>
+    <button  value = "0" onclick= "lisaa('0')">0</button>
+    <button  value = "=" onclick= "laske()">=</button>
+    
+    <button  value = "," onclick= "lisaa(',')">,</button>
+    
     </div>
     </form>
   </body>

@@ -51,7 +51,7 @@ button { /*Buttonin ulkonäön muutto */
     justify-content: center;
     align-content: center;
     min-height: 10vh;
-    grid-template-columns: repeat(3, 100px);
+    grid-template-columns: repeat(4, 100px);
     grid-template-rows: minmax(100px, auto) repeat(10, 80px);
 }
 
