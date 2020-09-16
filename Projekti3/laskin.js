@@ -1,8 +1,7 @@
 var nro = ' ';
 
 function lisaa(luku){//luvun lisääminen
-   nro += luku; 
-   
+   nro += luku;   
    document.getElementById('tulos').innerHTML = nro;
    
 }
@@ -13,9 +12,18 @@ function laske(){//Lasku funktio
 }
 
 function taakse(){//Reverse funktio
+   tulos = ['+', '-', '/', '*', '%'];
 
+   for(var i = 0; i < nro.length; i++){
+      for(var k = 0; k < tulos.length; k++){
+         if(nro[i] = tulos[k]){
+            indeksi = i;
+         }
+      }
+   }
+nro = nro.substr(0, indeksi);
 }
 
-function clear(){//Clear nappulalla saa päivitettyä koko sivun
+function reload(){//Clear nappulalla saa päivitettyä koko sivun
    window.location.reload();
 }
