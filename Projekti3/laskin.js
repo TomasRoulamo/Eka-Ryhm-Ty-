@@ -1,24 +1,24 @@
-var nro1, nro2, nro3, nro4, nro5, nro6, nro7, nro8, nro9, nro0, miinus, plus, pilkku, jako, kerto; //Kaikki muuttujat
-nro1= document.getElementById('1');
-nro2= document.getElementById('2');
-nro3= document.getElementById('3');
-nro4= document.getElementById('4');
-nro5= document.getElementById('5');
-nro6= document.getElementById('6');
-nro7= document.getElementById('7');
-nro8= document.getElementById('8');
-nro9= document.getElementById('9');
-nro0= document.getElementById('0');
-plus= document.getElementById('+');
-miinus= document.getElementById('-');
-jako= document.getElementById('/');
-kerto= document.getElementById('*');
-pilkku= document.getElementById(',');
+var nro1= document.getElementById('1');//Kaikki muuttujat
+var nro2= document.getElementById('2');
+var nro3= document.getElementById('3');
+var nro4= document.getElementById('4');
+var nro5= document.getElementById('5');
+var nro6= document.getElementById('6');
+var nro7= document.getElementById('7');
+var nro8= document.getElementById('8');
+var nro9= document.getElementById('9');
+var nro0= document.getElementById('0');
+var plus= document.getElementById('+');
+var miinus= document.getElementById('-');
+var jako= document.getElementById('/');
+var kerto= document.getElementById('*');
+var pilkku= document.getElementById(',');
 
 function lisaa(luku){//luvun lisääminen
 
    nro1 += luku;
-   document.getElementById('tulos').innerHTML = luku;
+   
+   document.getElementById('tulos').innerHTML = "<P>" + luku + "</P>";
    return false;
 }
 
