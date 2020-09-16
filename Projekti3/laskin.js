@@ -1,35 +1,37 @@
-var luku1, luku2, luku3, luku4, luku5, luku6, luku7, luku8, luku9, luku0, miinus, plus, pilkku, jako, kerto;
-luku1= document.getElementById('1');
-luku2= document.getElementById('2');
-luku3= document.getElementById('3');
-luku4= document.getElementById('4');
-luku5= document.getElementById('5');
-luku6= document.getElementById('6');
-luku7= document.getElementById('7');
-luku8= document.getElementById('8');
-luku9= document.getElementById('9');
-luku0= document.getElementById('0');
+var nro1, nro2, nro3, nro4, nro5, nro6, nro7, nro8, nro9, nro0, miinus, plus, pilkku, jako, kerto; //Kaikki muuttujat
+nro1= document.getElementById('1');
+nro2= document.getElementById('2');
+nro3= document.getElementById('3');
+nro4= document.getElementById('4');
+nro5= document.getElementById('5');
+nro6= document.getElementById('6');
+nro7= document.getElementById('7');
+nro8= document.getElementById('8');
+nro9= document.getElementById('9');
+nro0= document.getElementById('0');
 plus= document.getElementById('+');
 miinus= document.getElementById('-');
 jako= document.getElementById('/');
 kerto= document.getElementById('*');
 pilkku= document.getElementById(',');
 
-function clear(){
+function lisaa(luku){//luvun lisääminen
+
+   nro1 += luku;
+   document.getElementById('tulos').innerHTML = luku;
+   return false;
+}
+
+function laske(){//Lasku funktio
+
+
+}
+
+function taakse(){//Reverse funktio
+
+
+}
+
+function clear(){//Clear nappulalla saa päivitettyä koko sivun
    window.location.reload();
-}
-
-function lisaa(){
-
-   
-}
-
-function laske(){
-
-
-}
-
-function taakse(){
-
-
 }
