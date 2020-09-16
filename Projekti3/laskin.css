@@ -26,16 +26,7 @@ button { /*Buttonin ulkonäön muutto */
     transition: 0.3s;
 }
 
-.iso-button{ /*Isomman buttonin ulkonäkö */
-    background-color: #D3D3D3;
-    border: 1px solid white;
-    text-align: center;
-    padding: 16px 32px;
-    font-size: 16px;
-    opacity: 1;
-    transition: 0.3s;
-    grid-column: span 2;
-}
+
 
 .button:hover { /*Kun liikutat hiirtä buttonin päälle, sen väri haalentuu */
     opacity: 0.6
