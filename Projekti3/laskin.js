@@ -13,10 +13,10 @@ var miinus= document.getElementById('-');
 var jako= document.getElementById('/');
 var kerto= document.getElementById('*');
 var pilkku= document.getElementById(',');
-
+var nro;
 function lisaa(luku){//luvun lisääminen
 
-   nro1 += luku;
+   nro += luku;
    
    document.getElementById('tulos').innerHTML = "<P>" + luku + "</P>";
    return false;
