@@ -55,7 +55,7 @@ button { /*Buttonin ulkonäön muutto */
     grid-template-rows: minmax(100px, auto) repeat(10, 80px);
 }
 
-.tulos{ /*Tulos boxi */
+.vastaus{ /*Tulos boxi */
     display: flex;
     align-items: flex-end;
     grid-column: 1/-1;
