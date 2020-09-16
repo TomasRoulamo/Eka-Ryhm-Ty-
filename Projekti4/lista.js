@@ -1,6 +1,7 @@
 function teksti(){
   var solmu = document.createElement("LI");
-  var textisolmu = document.getElementById("boxi").value;
-  solmu.appendChild(textisolmu);
+  var teksti = document.getElementById("boxi").value;
+  var tekstisolmu = document.createTextNode(teksti);
+  solmu.appendChild(tekstisolmu);
   document.getElementById("ekaLista").appendChild(solmu);
 }
