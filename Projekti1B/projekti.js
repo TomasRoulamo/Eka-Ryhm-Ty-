@@ -31,7 +31,6 @@ function laheta(lomake){ //Lähetä nappulan funktio
         for (var i = 0; i < pallukka.length; i++) {
         if (pallukka[i].checked==true) {
            painettu = true;
-           
         }
     }
         if(painettu == false) {
@@ -45,37 +44,38 @@ function laheta(lomake){ //Lähetä nappulan funktio
         for (var k=0; k < boxit.length;k++) {
         if (boxit[k].checked==true) {
            vastaus = true;
-           
         }
     }
         if(vastaus == false){
             alert('Et ole valinnut laatikkoa.');
             return false;
-        }
-    
-    var lemppari2 = document.getElementById('aineet2');//Lempiaineen tarkastus
-        if(lemppari2 = ' '){
-            alert('Et ole valinnut lempainetta.');
-            return false;
     }
     
-        //Tekstiboxin tarkastus
-    var teksti = lomake.laatikko.value 
+    var lemppari2 = document.getElementById('aineet2');//Lempiaineen tarkastus
+        if(lemppari2 = ''){
+          alert('Et ole valinnut lempainetta.');
+          return false;
+        }
+
+    //Tekstiboxin tarkastus
+    var teksti = lomake.Teksti.value 
     if(teksti.length < 10){
         alert('Palautteesi täytyy olla vähintään 10 kirjainta pitkä.');
-        lomake.laatikko.focus();
+        lomake.Teksti.focus();
         return false;
     }
     
     else{ //Jos kaikkiin kohtiin on vastattu, niin saa täyttäjä kiitoksen.
     alert('Kiitos kun täytit lomakkeen! :) "Lomake tyhjenee nyt automaattisesti"');
     }
- 
+
+    
+
 }
 
-function tyhjenna(uusi){//Tällä tyhjennetään kaikki lomakkeessa oleva tieto.
+function tyhjenna(){//Tällä tyhjennetään kaikki lomakkeessa oleva tieto.
 
-    var tyhj = uusi.value;
+    var tyhj = '';
     if (!confirm("Haluatko varmasti tyhjentää kaikki kentät?")) {//Tässä varmennetaan haluaako täyttäjä tyhjentää lomakkeen.
     return false;
     }
