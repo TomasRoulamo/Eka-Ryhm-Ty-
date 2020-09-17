@@ -39,7 +39,6 @@ function tarkista()
 
 
 
-
      //Checkbox
      var boxi = document.getElementsByName('mielipiteet');
      var vastaus = 0;
@@ -55,21 +54,19 @@ function tarkista()
        alert("Et ole valinnut kohtaa 'Mitä mieltä olet sivustani tähän asti?'");
      }
 
+     var lemppari = document.getElementById('aineet');//Lempiaineen tarkastus
+      if(lemppari = ''){
+        alert('Et ole valinnut lempainetta.');
+        return false;
+      }
 
+      var pyly = document.getElementsByName('Teksti');//Tekstiboxi
 
-      var pyly = document.getElementsByName('Teksti');
-
-        if(pyly.length<10)
+        if(pyly.length > 10)
         {
         alert("Et kirjoittanut palautteeseesi mitään tekstiä! (min. 10 merkkiä)");
 
         return false;
         }
-
-        if(pyly.length>1000)
-        {
-        alert("Palaute-tekstin pituus on rajattu 1000 merkkiin!");
-
-        return false;
-        }
+        
       }
