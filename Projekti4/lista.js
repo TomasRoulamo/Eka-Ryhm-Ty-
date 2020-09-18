@@ -1,4 +1,4 @@
-var moi = event.which;
+
 
 function teksti(){
   var solmu = document.createElement("LI");
@@ -6,9 +6,10 @@ function teksti(){
   var tekstisolmu = document.createTextNode(teksti);
   solmu.appendChild(tekstisolmu);
   document.getElementById("ekaLista").appendChild(solmu);
+  document.getElementById("ekaLista").classList.add("li")
 }
 
-function painallusJalkeen()
+/*function painallusJalkeen()
 {
     if(syottopituus() > 0) // tarkistetaan, onko edellä luotu funktion pituus > 0
     {
@@ -23,6 +24,6 @@ function enterJalkeen()
          teeElementti(); //käynnistetään oletusfunktio
     }
 }
-
+var enterButton = "";
 enterButton.addEventListener("click", painallusJalkeen());
-listamuuttuja.addEventListener("keypress", enterJalkeen());
+listamuuttuja.addEventListener("keypress", enterJalkeen());*/
