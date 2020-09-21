@@ -14,6 +14,4 @@ function teksti(){
     {
       alert('Et ole kirjoittanut lisättävää tehävää.');
     }
-}
-
 
