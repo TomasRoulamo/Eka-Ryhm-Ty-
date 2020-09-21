@@ -1,7 +1,7 @@
 
 
 function teksti(){
-  var muuttujaX = document.createElement("button");
+  var muuttujaX = document.createElement("ekaLista");
   var solmu = document.createElement("LI");
   var teksti = document.getElementById("boxi").value;
   var tekstisolmu = document.createTextNode(teksti);
@@ -14,3 +14,4 @@ if(boksi.length < 2);
   {
     alert('Et laittanut ikääsi, tai olet liian nuori.');
     }
+    muuttujaX.appendChild(document.createTextNode("X"));
