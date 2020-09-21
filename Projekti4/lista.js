@@ -15,4 +15,3 @@ if(boksi.length < 2);
     alert('Et laittanut ikääsi, tai olet liian nuori.');
     }
 
-
