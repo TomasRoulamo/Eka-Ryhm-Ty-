@@ -1,6 +1,7 @@
 
 
 function teksti(){
+  var muuttujaX = document.createElement("button");
   var solmu = document.createElement("LI");
   var teksti = document.getElementById("boxi").value;
   var tekstisolmu = document.createTextNode(teksti);
