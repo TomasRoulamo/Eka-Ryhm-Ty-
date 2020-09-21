@@ -18,11 +18,16 @@ ul li {
   font-size: 18px;
   transition: 0.2s;
 
+<<<<<<< HEAD
   /* make the list items unselectable */
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+=======
+.joku-text {  /*Otsikon väri */
+    color : blue;
+>>>>>>> 26931f3dbe25b6cdebe5d1be1222907978ae718b
 }
 
 /* Set all odd list items to a different color (zebra-stripes) */
