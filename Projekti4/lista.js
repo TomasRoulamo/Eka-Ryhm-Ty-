@@ -14,4 +14,7 @@ if(boksi.length < 2);
   {
     alert('Et laittanut ikääsi, tai olet liian nuori.');
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3b12c9ab8a7661e44f1753a680757c17b214763e
