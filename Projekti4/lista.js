@@ -8,22 +8,8 @@ function teksti(){
   document.getElementById("ekaLista").appendChild(solmu);
   document.getElementById("ekaLista").classList.add("li")
 }
-
-/*function painallusJalkeen()
-{
-    if(syottopituus() > 0) // tarkistetaan, onko edellä luotu funktion pituus > 0
-    {
-       teeElementti(); // jos on, käynnistetään oletusfunktio
+var boksi = document.getElementById("boxi").value;
+if(boksi.length < 2);
+  {
+    alert('Et laittanut ikääsi, tai olet liian nuori.');
     }
-}
-
-function enterJalkeen()
-{
-    if(syottopituus() > 0 && event.which == 13) // event.which == 13 (enterin painallus)
-    {
-         teeElementti(); //käynnistetään oletusfunktio
-    }
-}
-var enterButton = "";
-enterButton.addEventListener("click", painallusJalkeen());
-listamuuttuja.addEventListener("keypress", enterJalkeen());*/
