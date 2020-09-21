@@ -1,7 +1,42 @@
-.li {
-    width: 100px;
-    height: 25;
-    background-color: cyan;
-    color:black;
-    font-size: 14px;
+
+
+.joku-text {  /*Otsikon väri */
+    color : Black;
 }
+
+h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+body{/* Kaksi värinen tausta */
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #FFD700, #FF4500);    
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+  }
+
+li {
+    cursor: pointer;
+    background-color: #D3D3D3;
+    border: 1px solid white;
+    position: relative;
+    padding: 16px 32px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 65%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+  }
