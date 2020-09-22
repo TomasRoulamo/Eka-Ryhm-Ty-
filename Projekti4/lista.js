@@ -18,3 +18,14 @@ function teksti(){
 	}
 
 	li.addEventListener("click",crossOut);
+
+  var poisto = document.createElement("button"); // luodaan painike-elementti
+  	poisto.appendChild(document.createTextNode("X")); // Lisätään siihen X-kirjain
+  	li.appendChild(poisto); // Lisätään se kaikkiin li-elementteihin
+  	poisto.addEventListener("click", poistaTehtava);
+    
+    function poistaTehtava()
+{
+  li.classList.add("delete")
+}
+}
