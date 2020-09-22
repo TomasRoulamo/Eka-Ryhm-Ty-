@@ -24,8 +24,6 @@ li {/*Listan item hommien muokkaus */
     cursor: pointer;
     background-color: #ADD8E6;
     border: 1px solid black;
-    position: relative;
-    list-style: none;
 	  padding: 10px 20px;
     font-size: 20px;
     list-style-type: none;
