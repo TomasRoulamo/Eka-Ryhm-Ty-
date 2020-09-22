@@ -15,8 +15,9 @@ body{/* Kaksi värinen tausta */
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+  text-align: left;
+	margin-top: 20px;
+	padding-left: 20px;
   }
 
 li {/*Listan item hommien muokkaus */
@@ -24,13 +25,15 @@ li {/*Listan item hommien muokkaus */
     background-color: #ADD8E6;
     border: 1px solid black;
     position: relative;
-    padding: 12px 8px 12px 40px;
+    list-style: none;
+	  padding: 10px 20px;
     font-size: 20px;
     list-style-type: none;
     opacity: 1;
     transition: 0.3s;
     width: 35%;
     margin: auto;
+    margin-bottom: 10px;
 }
 
 input { /* Syöttö kohdan ulkonäkö*/
