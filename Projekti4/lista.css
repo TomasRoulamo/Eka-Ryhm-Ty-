@@ -19,7 +19,7 @@ ul {
     padding: 0;
   }
 
-li {
+li {/*Listan item hommien muokkaus */
     cursor: pointer;
     background-color: #D3D3D3;
     border: 1px solid white;
@@ -31,7 +31,7 @@ li {
     transition: 0.3s;
 }
 
-input {
+input { /* Syöttö kohdan ulkonäkö*/
     margin: 0;
     border: none;
     border-radius: 0;
@@ -41,7 +41,7 @@ input {
     font-size: 16px;
 
   }
-  .aloitus-grid {
+  .aloitus-grid { /*Gridin muokkaus */
     background-color: #f44336;
     padding: 30px 40px;
     color: white;
@@ -50,7 +50,7 @@ input {
 
   }
 
-  .keksi{
+  .keksi{ /*Buttonin ulkonäkö */
 
     padding: 10px;
     width: 30%;
@@ -69,4 +69,12 @@ input {
   }
   .keksi:hover{
     opacity: 0.6
+  }
+
+  .poistettu{ /* Poistetun ulkonäkö?*/
+    display:none;
+  }
+
+  .valmis{ /*Jos valmis värjää vihreeksi */
+    background-color: seagreen;
   }
