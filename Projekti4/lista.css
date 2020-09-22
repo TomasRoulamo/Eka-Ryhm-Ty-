@@ -1,5 +1,5 @@
 .joku-text {  /*Otsikon väri */
-    color : blue;
+    color : black;
 }
 
 h1{
@@ -11,7 +11,7 @@ h1{
 body{/* Kaksi värinen tausta */
     padding: 0;
     margin: 0;
-    background: linear-gradient(to right, #FFD700, #FF4500);
+    background-image: url(https://eskipaper.com/images/snow-mountain-background-1.jpg);
 }
 
 ul {
@@ -21,14 +21,16 @@ ul {
 
 li {/*Listan item hommien muokkaus */
     cursor: pointer;
-    background-color: #D3D3D3;
-    border: 1px solid white;
+    background-color: #ADD8E6;
+    border: 1px solid black;
     position: relative;
     padding: 12px 8px 12px 40px;
     font-size: 20px;
     list-style-type: none;
     opacity: 1;
     transition: 0.3s;
+    width: 35%;
+    margin: auto;
 }
 
 input { /* Syöttö kohdan ulkonäkö*/
@@ -42,9 +44,9 @@ input { /* Syöttö kohdan ulkonäkö*/
 
   }
   .aloitus-grid { /*Gridin muokkaus */
-    background-color: #f44336;
+    background-color: #008B8B;
     padding: 30px 40px;
-    color: white;
+    color: black;
     align-items: center;
     text-align: center;
 
@@ -55,7 +57,7 @@ input { /* Syöttö kohdan ulkonäkö*/
     padding: 10px;
     width: 30%;
     background: #d9d9d9;
-    color: #555;
+    color: black;
     text-align: center;
     font-size: 16px;
     cursor: pointer;
