@@ -13,3 +13,8 @@ function teksti(){
       alert('Et ole kirjoittanut lisättävää tehävää.');
     }
   }
+  function crossOut() {
+		li.classList.toggle("done");
+	}
+
+	li.addEventListener("click",crossOut);
