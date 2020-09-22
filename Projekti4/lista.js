@@ -1,5 +1,4 @@
 function teksti(){
-  var muuttujaX = document.createElement("ekaLista");
   var solmu = document.createElement("LI");
   var teksti = document.getElementById("boxi").value;
   var tekstisolmu = document.createTextNode(teksti);
@@ -14,7 +13,6 @@ function teksti(){
     }
   }
   function crossOut() {
+    li.addEventListener("click",crossOut);
 		li.classList.toggle("done");
 	}
-
-	li.addEventListener("click",crossOut);
