@@ -1,18 +1,31 @@
+/* Luodaan alla olevat rivit hiiren ja enterin kuunteluun */
+var hiirenPainallus = document.getElementById("nappula");
+hiirenPainallus.addEventListener("click", lisaaHiirella);
+var texti = document.getElementById("boxi");
+texti.addEventListener("keypress", lisaaEnterilla);
+/* Tähön loppuu kuuntelupainikkeet */
+
 var ul = document.querySelector('ul');
-var li = document.querySelector("li");
+/* li-elementti luodaan, ei Haeta eli alla oleva rivi poistetaan
+var li = document.querySelector("li"); */
+
 function teksti()
 {
-  var texti = document.getElementById("boxi");
-  alert(texti.value);
-  var solmu = document.createElement("LI");
+  /* Luodaan listaelementti, eli alla oleva rivi lisätään */
+  var li = document.createElement("li");
+
   if(texti.value != '')
   {
     li.appendChild(document.createTextNode(texti.value));
   	ul.appendChild(li);
-  	teksti.value = "";
+  	texti.value = "";
   }
+/*  Nämä kummat jutut otettiin lpois, koska niitä ei tarvittu
+  var texti = document.getElementById("boxi");
+  alert(texti.value);
+  var solmu = document.createElement("LI");
 
-/*  var tekstisolmu = document.createTextNode(teksti);
+  var tekstisolmu = document.createTextNode(teksti);
   solmu.appendChild(tekstisolmu);
   document.getElementById("ekaLista").appendChild(solmu);*/
 
@@ -33,4 +46,21 @@ function teksti()
     li.classList.toggle("valmis");
   }
   li.addEventListener("click",crossOut);
+}
+
+/*Lisätään pääfunktion ulkopuolelle lisaaHiirella ja LisaasEnterilla -funktiot */
+function lisaaHiirella()
+{
+  if (texti.value.length > 0)
+  {
+    teksti();
+  }
+}
+
+function lisaaEnterilla(event)
+{
+  if(texti.value.length > 0 && event.which === 13)
+  {
+    teksti();
+  }
 }

@@ -8,13 +8,16 @@
   <body>
   <div class = "aloitus-grid">
     <h1 class = joku-text>Tehtävälista</h1>
-      <form>
-        <input type= "text" id="boxi" placeholder="Uusi tehtävä" value="">
-        <button id = "nappula" class = "keksi" type= "button" onclick="teksti()">Lisää tehtävä</button>
+    <form>
+      <input type= "text" id="boxi" placeholder="Uusi tehtävä">
+      <!-- poistettu onclick = "teksti()" -->
+      <button id = "nappula" class = "keksi" type= "button">Lisää tehtävä</button>
+      <ul id="ekaLista">
+      </ul>
     </form>
-  </div>
-    <ul id="ekaLista">
-    </ul>
-    <script src = "lista.js"></script>
+</div>
+
+
+    <script type="text/javascript" src = "lista.js"></script>
   </body>
-</html
+</html>
