@@ -20,15 +20,6 @@ function teksti()
   	ul.appendChild(li);
   	texti.value = "";
   }
-/*  Nämä kummat jutut otettiin lpois, koska niitä ei tarvittu
-  var texti = document.getElementById("boxi");
-  alert(texti.value);
-  var solmu = document.createElement("LI");
-
-  var tekstisolmu = document.createTextNode(teksti);
-  solmu.appendChild(tekstisolmu);
-  document.getElementById("ekaLista").appendChild(solmu);*/
-
 
     var poisto = document.createElement("button");
     poisto.appendChild(document.createTextNode("X"));
