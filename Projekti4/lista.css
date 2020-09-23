@@ -81,3 +81,10 @@ li:hover{
 .valmis{ /*Jos valmis värjää vihreeksi */
   background-color: seagreen;
 }
+
+.ks {
+  cursor: pointer;
+  margin: auto;
+  text-align: center;
+  right: 100px ;
+}

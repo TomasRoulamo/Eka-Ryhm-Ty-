@@ -32,6 +32,7 @@ function teksti()
 
     var poisto = document.createElement("button");
     poisto.appendChild(document.createTextNode("X"));
+    poisto.className= 'ks';
     li.appendChild(poisto);
     poisto.addEventListener("click", poistaTehtava);
 
