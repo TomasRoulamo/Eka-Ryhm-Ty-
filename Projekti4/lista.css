@@ -82,3 +82,9 @@ li:hover{
   background-color: seagreen;
 }
 
+.ks {
+    float: right;
+    margin-top: 1px;
+    background: grey;
+    color: white;
+}
