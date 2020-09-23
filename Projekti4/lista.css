@@ -83,8 +83,8 @@ li:hover{
 }
 
 .ks {
-  cursor: pointer;
-  margin: auto;
-  text-align: center;
-  right: 100px ;
+    float: right;
+    margin-top: 1px;
+    background: grey;
+    color: white;
 }
