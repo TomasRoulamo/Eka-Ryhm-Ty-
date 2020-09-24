@@ -7,3 +7,7 @@ body{/* Kaksi värinen tausta */
   width: 120px;
   height: 120px;
 }
+
+.turha-grid{
+    background-color: blueviolet;
+}
