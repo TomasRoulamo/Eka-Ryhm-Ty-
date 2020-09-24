@@ -4,6 +4,7 @@ body{/* Kaksi värinen tausta */
   background-image: url(https://previews.123rf.com/images/rommmeo79/rommmeo791507/rommmeo79150700182/42460203-pattern-cube-background-abstract-seamless-cubes-background-art.jpg);
 }
 .kuvat{
+  cursor: pointer;
   width: 120px;
   height: 120px;
 }
@@ -23,4 +24,8 @@ body{/* Kaksi värinen tausta */
     align-content: center;
     grid-template-columns: repeat(4, 120px);
     grid-template-rows: minmax(100px, auto) repeat(4, 120px);
+}
+
+.painettu{
+    display:none;
 }
