@@ -16,3 +16,11 @@ body{/* Kaksi värinen tausta */
   text-align: center;
 
 }
+
+.peli-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 120px);
+    grid-template-rows: minmax(100px, auto) repeat(4, 120px);
+}
