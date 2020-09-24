@@ -1,37 +1,33 @@
-body{/* Kaksi värinen tausta */
-  padding: 0;
-  margin: 0;
-  background-image: url(https://previews.123rf.com/images/rommmeo79/rommmeo791507/rommmeo79150700182/42460203-pattern-cube-background-abstract-seamless-cubes-background-art.jpg);
+body{/* Tauska tai jtn */
+    padding: 0;
+    margin: 0;
+    background-image: url(https://previews.123rf.com/images/rommmeo79/rommmeo791507/rommmeo79150700182/42460203-pattern-cube-background-abstract-seamless-cubes-background-art.jpg);
 }
 .kuvat{
-  cursor: pointer;
-  width: 120px;
-  height: 120px;
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
 }
 
 .turha-grid{
-  background-color: grey;
-  padding: 30px 40px;
-  color: silver;
-  align-items: center;
-  text-align: center;
+    background-color: grey;
+    padding: 30px 40px;
+    color: silver;
+    align-items: center;
+    text-align: center;
 
 }
 
 .peli-grid{
-  background-image: url("kys.jpg");
-  background-size: 120px 120px;
+    background-image: url("kys.jpg");
+    background-size: 120px 120px;
     display: grid;
     justify-content: center;
     align-content: center;
-    grid-template-columns: repeat(4, 120px);
-    grid-template-rows: minmax(100px, auto) repeat(4, 120px);
 }
 
 .painettu{
     display:none;
 }
 
-.td{
 
-}
