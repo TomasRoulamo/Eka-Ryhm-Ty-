@@ -19,6 +19,8 @@ body{/* Kaksi värinen tausta */
 }
 
 .peli-grid{
+  background-image: url("kys.jpg");
+  background-size: 120px 120px;
     display: grid;
     justify-content: center;
     align-content: center;
@@ -28,4 +30,8 @@ body{/* Kaksi värinen tausta */
 
 .painettu{
     display:none;
+}
+
+.td{
+
 }
