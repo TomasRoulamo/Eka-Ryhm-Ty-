@@ -49,10 +49,10 @@ function lisaaHiirella()
   }
 }
 
-function lisaaEnterilla(event)
+function lisaaListaanEnterilla(event)
 {
-  if(texti.value.length > 0 && event.which === 13)
-  {
-    teksti();
-  }
+	if (inputLength() > 0 && event.which ===13) { //Tarkistetaan, että Enter on painettu
+		//nro 13 on Enterin avainkoodi, voidaan kirjoittaa myös event.keyCode === 13
+		teksti(); // Kutsuu 'pääfunktiota'
+	}
 }
