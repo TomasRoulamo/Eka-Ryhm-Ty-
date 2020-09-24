@@ -9,5 +9,10 @@ body{/* Kaksi värinen tausta */
 }
 
 .turha-grid{
-    background-color: blueviolet;
+  background-color: grey;
+  padding: 30px 40px;
+  color: silver;
+  align-items: center;
+  text-align: center;
+
 }
