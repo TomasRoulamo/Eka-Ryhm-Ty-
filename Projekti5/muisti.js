@@ -5,3 +5,5 @@ function testi(){
 
     kortit.toggle('painettu');
 }
+
+var smerkki = 0;
