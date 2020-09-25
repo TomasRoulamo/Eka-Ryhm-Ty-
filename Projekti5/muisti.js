@@ -23,7 +23,11 @@ function aloita(){
       solu.appendChild(sis);
       rivi.appendChild(solu);
     }
+    tauluSis.appendChild(rivi);
   }
+  taulu.appendChild(tauluSis);
+  alue.appendChild(taulu);
+  taulu.setAttribute('border', '2');
 }
 
 function sekoita(taulu)
