@@ -18,14 +18,6 @@ body{/* Tauska tai jtn */
 
 }
 
-.peli-grid{
-    display: grid;
-    justify-content: center;
-    align-content: center;
-    width: 120px;
-    height: 120px;
-}
-
 .painettu{
     display:none;
 }
