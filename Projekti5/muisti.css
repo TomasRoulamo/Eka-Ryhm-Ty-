@@ -18,11 +18,6 @@ body{/* Tauska tai jtn */
 
 }
 
-.painettu{
-    display:none;
-}
-
-
 td{
     background-image:"kys.jpg";
     background-size: 120px 120px;

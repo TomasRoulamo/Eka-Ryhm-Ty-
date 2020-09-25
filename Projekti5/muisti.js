@@ -15,10 +15,10 @@ function aloita(){
   for(var t = 0; t < 4; t++){
       var solu = document.createElement('td');
       var sis = document.createTextNode('');
-      //solu.setAttribute('alt', sekoitetut[(vanhaKortti)]);
-      //solu.setAttribute('id', 'solu' + vanhaKortti);
-      //solu.setAttribute('name', vanhaKortti);
-      //solu.setAttribute('onclick', 'painettu('+vanhaKortti+');');
+      solu.setAttribute('alt', sekoitetut[(vanhaKortti)]);
+      solu.setAttribute('id', 'solu' + vanhaKortti);
+      solu.setAttribute('name', vanhaKortti);
+      solu.setAttribute('onclick', 'nayta('+vanhaKortti+');');
       //vanhaKortti += 1;
       solu.appendChild(sis);
       rivi.appendChild(solu);
@@ -28,6 +28,13 @@ function aloita(){
   taulu.appendChild(tauluSis);
   alue.appendChild(taulu);
   taulu.setAttribute('border', '2');
+}
+
+function nayta(nro){
+var tunnus = document.getElementById('solu'+nro);
+var altti = tunnus.getAttribute('alt');
+
+tunnus.innerHTML = '<img src="KuvatTaiJtn/'+altti+'">';
 }
 
 function sekoita(taulu)
