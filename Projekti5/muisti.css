@@ -19,11 +19,11 @@ body{/* Tauska tai jtn */
 }
 
 .peli-grid{
-    background-image:"kys.jpg";
-    background-size: 120px 120px;
     display: grid;
     justify-content: center;
     align-content: center;
+    width: 120px;
+    height: 120px;
 }
 
 .painettu{
@@ -31,3 +31,9 @@ body{/* Tauska tai jtn */
 }
 
 
+td{
+    background-image:"kys.jpg";
+    background-size: 120px 120px;
+    width: 120px;
+    height: 120px;
+}
