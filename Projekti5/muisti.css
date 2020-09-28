@@ -19,7 +19,7 @@ body{/* Tauska tai jtn */
 }
 
 td{
-    background-image:"kys.jpg";
+    background-image: url("../KuvatTaiJtn/kys.jpg");
     background-size: 120px 120px;
     width: 120px;
     height: 120px;
