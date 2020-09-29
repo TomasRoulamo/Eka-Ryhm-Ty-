@@ -35,7 +35,7 @@ var tunnus = document.getElementById('solu'+nro);
 var altti = tunnus.getAttribute('alt');
 
 if(vanha != -1){
-  vanhaAlt.vanha.getAttribute('alt');
+  vanhaAlt = vanha.getAttribute('alt');
 }
 else{
   vanhaAlt= vanha;
@@ -62,7 +62,20 @@ function sekoita(taulu){//Sekoittaa taulun heti alussa
 
 function odota(joku) {
   setTimeout(function(){
+<<<<<<< HEAD
 
       joku.innerHTML = '';
   }, 5000);
 }
+=======
+<<<<<<< HEAD
+     joku.innerHTML = '';
+   }, 5000);
+}
+=======
+     
+      joku.innerHTML = '';
+  }, 5000);
+}
+>>>>>>> 9603eeeecf1217acb9dcb00c415ea786d74f01f8
+>>>>>>> 4f125acc6af1b281c0be387359c5df48b7c78747
