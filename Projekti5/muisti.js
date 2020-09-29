@@ -45,6 +45,7 @@ else{
 tunnus.innerHTML = '<img src="Kuvat/'+altti+'">';
 
 if(altti == vanhaAlt){
+  var altti = tunnus.getAttribute('alt');
   vanha.innerHTML = '<img src="Kuvat/'+altti+'">';
   tunnus.innerHTML = '<img src="Kuvat/'+altti+'">';
 }
@@ -62,5 +63,5 @@ function sekoita(taulu){//Sekoittaa taulun heti alussa
 function odota(joku) {//Kuva pysyy näkyvillä 5 sec ennenkuin menee takas taustan alle
   setTimeout(function(){
      joku.innerHTML = '';
-   }, 5000);
+   }, 2000);
 }
