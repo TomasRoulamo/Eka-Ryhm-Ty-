@@ -1,10 +1,11 @@
 var kortit = ['tiku.png', 'Aku.png', 'shifu.jpg', 'karhu.png', 'lintu.jpg', 'morko.jpg', 'norsu.jpg', 'kissa.jpg', 'tiku.png', 'Aku.png', 'shifu.jpg', 'karhu.png', 'lintu.jpg', 'morko.jpg', 'norsu.jpg', 'kissa.jpg'];
-var vanhaKortti = 0;
+var sKortti = 0;
 var vanha = -1;
 var vanhaAlt;
 
 function aloita(){//Kun sivu avataan nii kaikki tässä tapahtuu
   sekoitetut = sekoita(kortit);
+  
   var alue = document.getElementById('peliAlue');
   var taulu = document.createElement('table'); 
   var tauluSis = document.createElement('tbody');
@@ -15,11 +16,11 @@ function aloita(){//Kun sivu avataan nii kaikki tässä tapahtuu
   for(var t = 0; t < 4; t++){//Tämä ja ylempi for kommento luo taulukon
       var solu = document.createElement('td');
       var sis = document.createTextNode('');
-      solu.setAttribute('alt', sekoitetut[(vanhaKortti)]);
-      solu.setAttribute('id', 'solu' + vanhaKortti);
-      solu.setAttribute('name', vanhaKortti);
-      solu.setAttribute('onclick', 'nayta('+vanhaKortti+');');
-      vanhaKortti += 1;
+      solu.setAttribute('alt', sekoitetut[(sKortti)]);
+      solu.setAttribute('id', 'solu' + sKortti);
+      solu.setAttribute('name', sKortti);
+      solu.setAttribute('onclick', 'nayta('+sKortti+');');
+      sKortti += 1;
       solu.appendChild(sis);
       rivi.appendChild(solu);
     }
@@ -30,7 +31,7 @@ function aloita(){//Kun sivu avataan nii kaikki tässä tapahtuu
   taulu.setAttribute('border', '2');//Taulukolle reunat
 }
 
-function nayta(nro){
+function nayta(nro){//Näyttää kortin jota painetaan
 var tunnus = document.getElementById('solu'+nro);
 var altti = tunnus.getAttribute('alt');
 
@@ -41,13 +42,13 @@ else{
   vanhaAlt= vanha;
 }
 
-tunnus.innerHTML = '<img src="KuvatTaiJtn/'+altti+'">';
+tunnus.innerHTML = '<img src="Kuvat/'+altti+'">';
 
 if(altti == vanhaAlt){
-  var altti = tunnus.getAttribute('alt');
+  
 
-  vanha.innerHTML = '<img src="KuvatTaiJtn/'+altti+'">';
-  tunnus.innerHTML = '<img src="KuvatTaiJtn/'+altti+'">';
+  vanha.innerHTML = '<img src="Kuvat/'+altti+'">';
+  tunnus.innerHTML = '<img src="Kuvat/'+altti+'">';
 }
 else{
   vanha = tunnus;
@@ -60,7 +61,7 @@ function sekoita(taulu){//Sekoittaa taulun heti alussa
     return taulu;
 }
 
-function odota(joku) {
+function odota(joku) {//Kuva pysyy näkyvillä 5 sec ennenkuin menee takas taustan alle
   setTimeout(function(){
      
       joku.innerHTML = '';
