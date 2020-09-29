@@ -45,8 +45,6 @@ else{
 tunnus.innerHTML = '<img src="Kuvat/'+altti+'">';
 
 if(altti == vanhaAlt){
-  
-
   vanha.innerHTML = '<img src="Kuvat/'+altti+'">';
   tunnus.innerHTML = '<img src="Kuvat/'+altti+'">';
 }
