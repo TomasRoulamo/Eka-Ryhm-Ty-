@@ -1,4 +1,4 @@
-var kortit = ['tiku.png', 'Aku.png', 'shifu.jpg', 'karhu.png', 'lintu.jpg', 'mörkö.jpg', 'norsu.jpg', 'kissa.jpg', 'tiku.png', 'Aku.png', 'shifu.jpg', 'karhu.png', 'lintu.jpg', 'mörkö.jpg', 'norsu.jpg', 'kissa.jpg'];
+var kortit = ['tiku.png', 'Aku.png', 'shifu.jpg', 'karhu.png', 'lintu.jpg', 'morko.jpg', 'norsu.jpg', 'kissa.jpg', 'tiku.png', 'Aku.png', 'shifu.jpg', 'karhu.png', 'lintu.jpg', 'morko.jpg', 'norsu.jpg', 'kissa.jpg'];
 var vanhaKortti = 0;
 var vanha = -1;
 var vanhaAlt;
@@ -62,6 +62,13 @@ function sekoita(taulu){//Sekoittaa taulun heti alussa
 
 function odota(joku) {
   setTimeout(function(){
+<<<<<<< HEAD
      joku.innerHTML = '';
    }, 5000);
 }
+=======
+     
+      joku.innerHTML = '';
+  }, 5000);
+}
+>>>>>>> 9603eeeecf1217acb9dcb00c415ea786d74f01f8
