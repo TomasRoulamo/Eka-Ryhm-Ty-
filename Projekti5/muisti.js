@@ -6,7 +6,7 @@ var vanhaAlt;
 function aloita(){//Kun sivu avataan nii kaikki tässä tapahtuu
   sekoitetut = sekoita(kortit);
   var alue = document.getElementById('peliAlue');
-  var taulu = document.createElement('table'); 
+  var taulu = document.createElement('table');
   var tauluSis = document.createElement('tbody');
 
   for(var i = 0; i < 4; i++){
@@ -35,7 +35,7 @@ var tunnus = document.getElementById('solu'+nro);
 var altti = tunnus.getAttribute('alt');
 
 if(vanha != -1){
-  vanhaAlt.vanha.getAttribute('alt');
+  vanhaAlt = vanha.getAttribute('alt');
 }
 else{
   vanhaAlt= vanha;
