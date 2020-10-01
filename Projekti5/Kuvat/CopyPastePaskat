@@ -1,0 +1,33 @@
+   <br>
+    <div class = "peli-grid">
+      <img src="tiku.png" id="tiku" class = "kuvat">
+      <img src="Aku.png" id="Aku" class = "kuvat">
+      <img src="shifu.jpg" id="shifu" class = "kuvat">
+      <img src="karhu.png" id="karhu" class = "kuvat">
+      <img src="lintu.jpg" id="lintu" class = "kuvat">
+      <img src="mörkö.jpg" id="morko" class = "kuvat">
+      <img src="norsu.jpg" id="norsu" class = "kuvat">
+      <img src="kissa.jpg" id="kissa" class = "kuvat">
+
+      <img src="tiku.png" id="tiku" class = "kuvat">
+      <img src="Aku.png" id="Aku" class = "kuvat">
+      <img src="shifu.jpg" id="shifu" class = "kuvat">
+      <img src="karhu.png" id="karhu" class = "kuvat">
+      <img src="lintu.jpg" id="lintu" class = "kuvat">
+      <img src="mörkö.jpg" id="morko" class = "kuvat">
+      <img src="norsu.jpg" id="norsu" class = "kuvat">
+      <img src="kissa.jpg" id="kissa" class = "kuvat">
+
+      <img src="kys.jpg" id="solu1" class="kuvat" onclick="testi()">
+
+    </div>
+
+  grid-template-columns: repeat(4, 120px);
+    grid-template-rows: minmax(100px, auto) repeat(4, 120px);
+
+
+
+  <div class = "turha-grid">
+      <h1>Hupi hauska muistipeli</h1>
+      <p1>Osaatko löytää parin jokaiselle eläimelle?</p1>
+    </div>
