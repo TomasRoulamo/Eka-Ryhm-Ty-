@@ -30,10 +30,29 @@ function laheta(){ //Lähetä nappulan funktio
     }
     
      //Työnantajan / oppilaitoksen tarkastus 
-     var tanto = document.getElementById('tanto').value; 
-     if(tanto.length < 5){
-         alert('Et antanut työnantajasi tai oppilaitoksesi nimeä.');
+    var tanto = document.getElementById('tanto').value; 
+    if(tanto.length < 5){
+        alert('Et antanut työnantajasi tai oppilaitoksesi nimeä.');
+       return false;
+    }
+    
+    //Syntymäajan tarkastus
+    var spaiva = document.getElementById('spaiva').value; 
+    if(spaiva.length < 8){
+        alert('Et antanut syntymäpäivääsi.');
+        return false;
+    }
+
+     //Syntymäajan tarkastus
+     var rvalio = document.getElementById('boxi').value; 
+     if(rvalio.length < 2){
+         alert('Et antanut syntymäpäivääsi.');
          return false;
      }
+
+    //Jos kaikkiin kohtiin on vastattu niin kiitetään täyttäjää
+    else{
+        alert('Kiitos kun täytit lomakkeen. :)')
+    }
 }
 
