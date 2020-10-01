@@ -13,6 +13,13 @@ function laheta(){ //Lähetä nappulan funktio
         alert("Et antanut sukunimeäsi!");
         return false;
     }
+
+     //Osoitetietojen tarkastus
+     var osoite = document.getElementsByName('osoite').value; 
+     if(osoite.length < 5){
+        alert('Et antanut osoitteesi tietoja.');
+        return false;
+     }
     
      //Puhelimen tarkastus 
      var pNro = document.getElementById('pnro').value; 
@@ -46,9 +53,10 @@ function laheta(){ //Lähetä nappulan funktio
      //Syntymäajan tarkastus
      var rvalio = document.getElementById('boxi').value; 
      if(rvalio.length < 2){
-         alert('Et antanut syntymäpäivääsi.');
-         return false;
-     }
+        alert('Et antanut syntymäpäivääsi.');
+        return false;
+    }
+
 
     //Jos kaikkiin kohtiin on vastattu niin kiitetään täyttäjää
     else{
