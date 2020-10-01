@@ -61,26 +61,7 @@ function sekoita(taulu){//Sekoittaa taulun heti alussa
 
 function odota(joku) {//Kuva pysyy näkyvillä 5 sec ennenkuin menee takas taustan alle
   setTimeout(function(){
-<<<<<<< HEAD
-<<<<<<< HEAD
 
       joku.innerHTML = '';
-  }, 5000);
+  }, 2000);
 }
-=======
-<<<<<<< HEAD
-     joku.innerHTML = '';
-   }, 5000);
-}
-=======
-
-      joku.innerHTML = '';
-  }, 5000);
-}
->>>>>>> 9603eeeecf1217acb9dcb00c415ea786d74f01f8
->>>>>>> 4f125acc6af1b281c0be387359c5df48b7c78747
-=======
-     joku.innerHTML = '';
-   }, 5000);
-}
->>>>>>> dd4fec50c2c186cf429c1a719b5de32c39078482
