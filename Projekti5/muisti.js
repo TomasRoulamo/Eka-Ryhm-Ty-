@@ -5,7 +5,7 @@ var vanhaAlt;
 
 function aloita(){//Kun sivu avataan nii kaikki tässä tapahtuu
   sekoitetut = sekoita(kortit);
-  
+
   var alue = document.getElementById('peliAlue');
   var taulu = document.createElement('table');
   var tauluSis = document.createElement('tbody');
@@ -73,7 +73,7 @@ function odota(joku) {//Kuva pysyy näkyvillä 5 sec ennenkuin menee takas taust
    }, 5000);
 }
 =======
-     
+
       joku.innerHTML = '';
   }, 5000);
 }
