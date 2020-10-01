@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap');
+
+.blue-text {
+color : Darkblue;
+}
+
+h1 {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 30px;
+}
+
+body {
+    background-image: url("https://stillmed.olympic.org/media/Images/OlympicOrg/News/2019/12/11/2019-12-11-mountain-day-featured-01.jpg");
+}
+
+div {
+  border-width: 1px;
+  border-style: solid;
+  border-color: blue;
+  margin: auto;
+  height: 730px;
+  width: 20%;
+  background-color: powderblue;
+}
