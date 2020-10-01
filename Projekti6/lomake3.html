@@ -9,63 +9,31 @@
   <body>
     <div class="boxed">
     <h1 class = "blue-text">Kyselylomake</h1>
-<form class="" action="projekti.html" method="post" onsubmit="return laheta(this)" onreset="return tyhjenna()">
-        <p>&nbsp;Nimi:
-            <br>
-            &nbsp;<input type= "text" name="eka" placeholder="Kirjoita oma nimesi tähän">
-        </p>
-        <p>&nbsp;Sähköposti:
-            <br>
-            &nbsp;<input type= "text" name="toka" placeholder="Kirjoita oma sähköpostiosoitteesi">
-        </p>
-        <p>&nbsp;Ikä:
-            <br>
-            &nbsp;<input type= "text" name="kolmas" placeholder="Kirjoita oma ikäsi">
-            <p>&nbsp;Mihin ryhmään kuulut?
-              <br>
-              &nbsp;<select name= "joku" multiple>
-              <option>Opiskelija</option>
-              <option>Työssä</option>
-              <option>Työtön</option>
-              <option>Eläkeläinen</option>
-              </select>
-        </p>
-        <p>&nbsp;Suosittelisitko Keudaa ystävillesi?
-          <br>
-          <input type="radio" name="suositus" value="pallo1">Kyllä
-          <br>
-          <input type="radio" name="suositus" value="pallo2">En
-          <br>
-          <input type="radio" name="suositus" value="pallo3">En osaa sanoa
-        </p>
-        <p>&nbsp;Parasta Keudassa on:
-          <br>
-          <input type="checkbox" name="mielipiteet" value="mp1">Ammattiaineet
-          <br>
-          <input type="checkbox" name="mielipiteet" value="mp2">YTO-aineet
-          <br>
-          <input type="checkbox" name="mielipiteet" value="mp3">Ruokatunti
-        </p>
-        <p>&nbsp;Mikä on lempiaineesi Keudassa?
-            <br>
-            &nbsp;<select id= "aineet2">
-            <option> </option>
-            <option>Ammattiaineet</option>
-            <option>Kirjallisetaineet</option>
-            <option>Valinnaiset aineet</option>
-            <option>Muu</option>
-            </select>
-        </p>
-        <p>&nbsp;Kerro, miten kehittäisit opetusta Keudassa?
-            <br>
-            &nbsp;<textarea name="laatikko" cols="50" rows="5"></textarea>
-            <br>
-            <br>
-          &nbsp;<input type="submit" name="Tarkasta" value="Lähetä lomake">
-          &nbsp;<input type="reset" name="Tyhjenna" value="Tyhjennä lomake">
-          <br>
-      </p>
-    </form>
+<form action="" method="" >
+        
+    <p>Etunimi:
+        <br>
+        <input type= "text" id="etu"  placeholder="Kirjoita etunimesi tähän" value=""></p>
+    <p>Sukunimi:
+         <br>
+         <input type= "text" id="suku" placeholder="Kirjoita sukunimesi tähän" value=""></p>
+    <p>Puhelinnumero:
+        <br>
+        <input type= "text" id="pnro" placeholder="Kirjoita puhelinnumerosi tähän" value=""></p>
+    <p>Sähköposti:
+        <br>
+        <input type= "text" id="sposti" placeholder="Kirjoita oma sähköpostiosoitteesi" value=""></p>
+    <p>Työnantaja tai oppilaitos:
+        <br>
+        <input type= "text" id="tanto" placeholder="Kirjoita työnantajasi tai oppilaitoksesi nimi" value=""></p>
+    <p>Ammattinimike:
+        <br>
+        <input type= "text" id="animi" placeholder="Kirjoita tähän joko opiskelija, tai ammattinimikkeesi" value=""></p>
+
+
+    
+    <button type="button" class="nappula" id="buttoni" onclick="laheta()">Lähetä</button>
     </div>
+    </form>
   </body>
 </html>
