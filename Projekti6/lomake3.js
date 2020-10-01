@@ -23,7 +23,8 @@ function laheta(){ //Lähetä nappulan funktio
     
      //Puhelimen tarkastus 
      var pNro = document.getElementById('pnro').value; 
-     if(pNro.length < 10){
+     if(pNro.length < 
+        ){
          alert('Et antanut puhelinnumeroasi.');
          return false;
      }
