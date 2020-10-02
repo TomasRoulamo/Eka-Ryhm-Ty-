@@ -56,6 +56,13 @@ function laheta(){ //Lähetä nappulan funktio
         alert('Et antanut työnantajasi tai oppilaitoksesi nimeä.');
        return false;
     }
+
+    //Ammattinimikkeen tarkastus
+    var ammatti = document.getElementById('animi').value; 
+    if(ammatti.length < 8){
+        alert('Et antanut ammattinimikettäsi.');
+        return false;
+    }
      
     //Syntymäajan tarkastus
     var spaiva = document.getElementById('spaiva').value; 
@@ -73,7 +80,7 @@ function laheta(){ //Lähetä nappulan funktio
         }
     }
         if(painettu == false) {
-            alert('Et ole valinnut pallukkaa.');
+            alert('Et ole valinnut maksettavaa määrää.');
             return false;
     }
 
@@ -86,10 +93,11 @@ function laheta(){ //Lähetä nappulan funktio
 
     //Jos kaikkiin kohtiin on vastattu niin kiitetään täyttäjää
     else{
-        alert('Kiitos kun täytit lomakkeen. :)')
+        alert('Kiitos kun täytit lomakkeen. :)');
+        
     }
 }
 
-/*fucntion tietoa(){
-    document.getElementById('lisaa').innerHTML = 
-}*/
+function tietoa(){
+    document.getElementById('lisaa').innerHTML = 'Tapahtuma on Helsingissä, Messukeskuksessa. Tapahtumassa tullaan pelaamaan/pitämään yhtä kaverien kanssa.';
+}
