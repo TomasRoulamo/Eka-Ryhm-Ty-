@@ -15,9 +15,23 @@ function laheta(){ //Lähetä nappulan funktio
     }
 
      //Osoitetietojen tarkastus
-     var osoite = document.getElementsByName('osoite').value; 
+     var osoite = document.getElementById('osoite').value; 
      if(osoite.length < 5){
-        alert('Et antanut osoitteesi tietoja.');
+        alert('Et antanut lähiosoitettasi.');
+        return false;
+     }
+
+     //Kaupungin tarkastus
+     var kaupunki = document.getElementById('kaupunki').value; 
+     if(kaupunki.length < 5){
+        alert('Et antanut kaupunkisi nimeä');
+        return false;
+     }
+
+     //Postinumeron tarkastus
+     var posnro = document.getElementById('posnro').value; 
+     if(posnro.length < 5){
+        alert('Et antanut postinumeroasi.');
         return false;
      }
     
@@ -42,7 +56,7 @@ function laheta(){ //Lähetä nappulan funktio
         alert('Et antanut työnantajasi tai oppilaitoksesi nimeä.');
        return false;
     }
-    
+     
     //Syntymäajan tarkastus
     var spaiva = document.getElementById('spaiva').value; 
     if(spaiva.length < 8){
@@ -50,16 +64,32 @@ function laheta(){ //Lähetä nappulan funktio
         return false;
     }
 
-     //Syntymäajan tarkastus
-     var rvalio = document.getElementById('boxi').value; 
-     if(rvalio.length < 2){
-        alert('Et antanut syntymäpäivääsi.');
-        return false;
+    //Radion tarkastus
+    var radio = document.getElementsByName('radio');
+    var painettu = false;
+        for (var i = 0; i < radio.length; i++) {
+        if (radio[i].checked==true) {
+           painettu = true;
+        }
+    }
+        if(painettu == false) {
+            alert('Et ole valinnut pallukkaa.');
+            return false;
     }
 
+    //Ruokavalion tarkastus
+    var rvalio = document.getElementById('boxi').value; 
+    if(rvalio.length < 2){
+        alert('Et kirjoittanut mitään erikoisruokavalio kohtaan.');
+        return false;
+    }
 
     //Jos kaikkiin kohtiin on vastattu niin kiitetään täyttäjää
     else{
         alert('Kiitos kun täytit lomakkeen. :)')
     }
 }
+
+/*fucntion tietoa(){
+    document.getElementById('lisaa').innerHTML = 
+}*/
