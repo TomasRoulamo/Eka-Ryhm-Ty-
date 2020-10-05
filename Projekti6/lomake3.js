@@ -37,8 +37,7 @@ function laheta(){ //Lähetä nappulan funktio
     
      //Puhelimen tarkastus 
      var pNro = document.getElementById('pnro').value; 
-     if(pNro.length < 
-        ){
+     if(pNro.length < 8){
          alert('Et antanut puhelinnumeroasi.');
          return false;
      }
@@ -94,7 +93,7 @@ function laheta(){ //Lähetä nappulan funktio
 
     //Jos kaikkiin kohtiin on vastattu niin kiitetään täyttäjää
     else{
-        alert('Kiitos kun täytit lomakkeen. :)');
+        alert('Kiitos kun täytit lomakkeen.');
         
     }
 }
