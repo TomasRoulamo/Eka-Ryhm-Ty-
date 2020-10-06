@@ -27,8 +27,8 @@
 
     }
 
-    $talletus = "INSERT INTO lomake3 (Etunimi, Sukunimi, Lahiosoite, Kaupunki, Postinumero, Puhelin, Sahkoposti, Tyonantaja, Ammattinimike, Syntymaaika, Hintavaihtoehdot, Erikoisruokavalio)
-    VALUES ('$enimi','$snimi','$losoite', '$kaupunki','$postinro,'$puhnro','$sposti','$tantaja', '$ammattinimike', '$saika', '$hintaehdot', '$Ruokavalio')";
+    $talletus = "INSERT INTO lomake3 (Etunimi, Sukunimi, Lahiosoite, Kaupunki, Postinumero, Puhelin, Sahkoposti, Tyonantaja, Ammatinimike, Syntymaaika, Hintavaihtoehdot, Erikoisruokavalio)
+    VALUES ('$enimi','$snimi','$losoite', '$kaupunki','$postinro','$puhnro','$sposti','$tantaja', '$ammattinimike', '$saika', '$hintaehdot', '$Ruokavalio')";
 
     if (mysqli_query($link, $talletus)){
     echo "Uudet tiedostot paivitetty";
