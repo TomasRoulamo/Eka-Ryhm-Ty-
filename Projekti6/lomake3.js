@@ -1,12 +1,12 @@
 function laheta(){ //Lähetä nappulan funktio
-    
+
     //Etunimen tarkastus
     var eNimi = document.getElementById('etu').value;
     if(eNimi.length < 3){
         alert("Et antanut etunimeäsi!");
         return false;
     }
-    
+
     //Sukunimen tarkastus
     var sNimi = document.getElementById('suku').value;
     if(sNimi.length < 4){
@@ -15,28 +15,28 @@ function laheta(){ //Lähetä nappulan funktio
     }
 
      //Osoitetietojen tarkastus
-     var osoite = document.getElementById('osoite').value; 
+     var osoite = document.getElementById('osoite').value;
      if(osoite.length < 5){
         alert('Et antanut lähiosoitettasi.');
         return false;
      }
 
      //Kaupungin tarkastus
-     var kaupunki = document.getElementById('kaupunki').value; 
+     var kaupunki = document.getElementById('kaupunki').value;
      if(kaupunki.length < 5){
         alert('Et antanut kaupunkisi nimeä');
         return false;
      }
 
      //Postinumeron tarkastus
-     var posnro = document.getElementById('posnro').value; 
+     var posnro = document.getElementById('posnro').value;
      if(posnro.length < 5){
         alert('Et antanut postinumeroasi.');
         return false;
      }
-    
-     //Puhelimen tarkastus 
-     var pNro = document.getElementById('pnro').value; 
+
+     //Puhelimen tarkastus
+     var pNro = document.getElementById('pnro').value;
      if(pNro.length < 8){
          alert('Et antanut puhelinnumeroasi.');
          return false;
@@ -45,27 +45,27 @@ function laheta(){ //Lähetä nappulan funktio
     //Sähköpostin tarkastus
     var sPosti = document.getElementById('sposti').value;
     var ehdot = /\S+@\S+/;
-        if(!ehdot.test(sPosti)){   
+        if(!ehdot.test(sPosti)){
         alert("Anna kunnon sähköposti");
         return false;
     }
-    
-     //Työnantajan / oppilaitoksen tarkastus 
-    var tanto = document.getElementById('tanto').value; 
+
+     //Työnantajan / oppilaitoksen tarkastus
+    var tanto = document.getElementById('tanto').value;
     if(tanto.length < 5){
         alert('Et antanut työnantajasi tai oppilaitoksesi nimeä.');
        return false;
     }
 
     //Ammattinimikkeen tarkastus
-    var ammatti = document.getElementById('animi').value; 
+    var ammatti = document.getElementById('animi').value;
     if(ammatti.length < 8){
         alert('Et antanut ammattinimikettäsi.');
         return false;
     }
-     
+
     //Syntymäajan tarkastus
-    var spaiva = document.getElementById('spaiva').value; 
+    var spaiva = document.getElementById('spaiva').value;
     if(spaiva.length < 8){
         alert('Et antanut syntymäpäivääsi.');
         return false;
@@ -85,7 +85,7 @@ function laheta(){ //Lähetä nappulan funktio
     }
 
     //Ruokavalion tarkastus
-    var rvalio = document.getElementById('boxi').value; 
+    var rvalio = document.getElementById('boxi').value;
     if(rvalio.length < 2){
         alert('Et kirjoittanut mitään erikoisruokavalio kohtaan.');
         return false;
@@ -94,7 +94,7 @@ function laheta(){ //Lähetä nappulan funktio
     //Jos kaikkiin kohtiin on vastattu niin kiitetään täyttäjää
     else{
         alert('Kiitos kun täytit lomakkeen.');
-        
+        return false;
     }
 }
 

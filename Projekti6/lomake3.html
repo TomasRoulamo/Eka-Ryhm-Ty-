@@ -9,34 +9,34 @@
   <body>
     <div class="boxed">
     <h1 class = "blue-text">Ilmoittautumis lomake</h1>
-<form action="lomake3.php" method="get">
-        
+<form action="lomake3.php" method="get" onsubmit="laheta()">
+
     <p>Etunimi:
         <br>
-        <input type= "text" id="etu"  placeholder="Kirjoita etunimesi tähän" value=""></p>
+        <input type= "text" id="etu" name="etu"   placeholder="Kirjoita etunimesi tähän" value=""></p>
     <p>Sukunimi:
          <br>
-         <input type= "text" id="suku" placeholder="Kirjoita sukunimesi tähän" value=""></p>
+         <input type= "text" id="suku"  name="suku" placeholder="Kirjoita sukunimesi tähän" value=""></p>
     <p>Osoitetiedot:
         <br>
-        <input type= "text" id="osoite"  placeholder="Lähiosoite" value=""> <input type="text" id = "kaupunki"  placeholder="Kaupunki" value="">
+        <input type= "text" id="osoite" name="osoite" placeholder="Lähiosoite" value=""> <input type="text" id = "kaupunki"  placeholder="Kaupunki" value="">
         <br>
-        <input type="text" id= "posnro"  placeholder="Postinumero" value=""></p>
+        <input type="text" id= "posnro" name="posnro" placeholder="Postinumero" value=""></p>
     <p>Puhelinnumero:
         <br>
-        <input type= "text" id="pnro" placeholder="Kirjoita puhelinnumerosi tähän" value=""></p>
+        <input type= "text" id="pnro" name="pnro" placeholder="Kirjoita puhelinnumerosi tähän" value=""></p>
     <p>Sähköposti:
         <br>
-        <input type= "text" id="sposti" placeholder="Kirjoita oma sähköpostiosoitteesi" value=""></p>
+        <input type= "text" id="sposti" name="sposti" placeholder="Kirjoita oma sähköpostiosoitteesi" value=""></p>
     <p>Työnantaja tai oppilaitos:
         <br>
-        <input type= "text" id="tanto" placeholder="Kirjoita työnantajasi tai oppilaitoksesi nimi" value=""></p>
+        <input type= "text" id="tanto" name="tanto" placeholder="Kirjoita työnantajasi tai oppilaitoksesi nimi" value=""></p>
     <p>Ammattinimike:
         <br>
-        <input type= "text" id="animi" placeholder="Kirjoita tähän joko opiskelija, tai ammattinimikkeesi" value=""></p>
+        <input type= "text" id="animi" name="animi" placeholder="Kirjoita tähän joko opiskelija, tai ammattinimikkeesi" value=""></p>
     <p>Syntymäaika:
         <br>
-        <input type= "text" id="spaiva" placeholder="Kirjoita syntymäaikasi tähän" value=""></p>
+        <input type= "text" id="spaiva" name="spaiva" placeholder="Kirjoita syntymäaikasi tähän" value=""></p>
 
     <p>Osallistumis maksut</p>
     <input type= "radio" name="radio">Perjantai-Sunnuntai 100€
@@ -48,16 +48,16 @@
     <input type= "radio" name="radio">Sunnuntai 40 €
     <br>
     <br>
-    
+
     <button type="button" onclick="tietoa()">Lisätietoa</button>
-    
+
     <div id= "lisaa"></div>
-    
+
     <p>Ruokavalio:
         <br>
         <textarea id = "boxi"name="laatikko" cols="50" rows="5" placeholder = "Kerro tähän jos sinulla on erikoisruokavalio"></textarea>
 
-    <button type="button" class="nappula" id="buttoni" onclick="laheta()">Ilmoittaudu</button>
+    <input type="submit" name="" value="Ilmoittaudu"> Ilmoittaudu</button>
     </div>
     </form>
   </body>
