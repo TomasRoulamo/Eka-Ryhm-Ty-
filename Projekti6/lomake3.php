@@ -31,4 +31,4 @@
     echo "Virhe: " . $talletus . "<br>" . mysqli_error($link);
     }
 
-    ?>
+?>
