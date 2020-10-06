@@ -4,8 +4,14 @@
     $losoite = $_GET["osoite"];
     $puhnro = $_GET["pnro"];
     $postinro = $_GET["posnro"];
+    $kaupunki = $_GET["kaupunki"];
+    $sposti = $_GET["sposti"];
+    $tantaja = $_GET["tanto"];
+    $ammattinimike = $_GET["animi"];
+    $saika = $_GET["spaiva"];
+    $hintaehdot = $_GET["radio"];
+    $Ruokavalio = $_GET["laatikko"];
 
-    //$ptp = $_GET["kaupunki"];
     $palvelin = "fdb28.awardspace.net";
     $kayttaja = "3597339_sqlopiskelu";
     $salasana = "72MoippaLe71";
@@ -21,8 +27,8 @@
 
     }
 
-    $talletus = "INSERT INTO lomake3 (Etunimi, Sukunimi, Lahiosoite, Puhelin, Postinumero, Erikoisruokavalio)
-    VALUES ('$enimi','$snimi','$losoite','$puhnro','$postinro','')";
+    $talletus = "INSERT INTO lomake3 (Etunimi, Sukunimi, Lahiosoite, Kaupunki, Postinumero, Puhelin, Sahkoposti, Tyonantaja, Ammattinimike, Syntymaaika, Hintavaihtoehdot, Erikoisruokavalio)
+    VALUES ('$enimi','$snimi','$losoite', '$kaupunki','$postinro,'$puhnro','$sposti','$tantaja', '$ammattinimike', '$saika', '$hintaehdot', '$Ruokavalio')";
 
     if (mysqli_query($link, $talletus)){
     echo "Uudet tiedostot paivitetty";
